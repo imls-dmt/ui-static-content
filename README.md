@@ -7,3 +7,5 @@ model is based upon custom JSON wrappers that include content metadata and point
 related Markdown files representing the content itself. It also provides the static 
 source imagery referenced by the user interface. 
 
+Static content is available through: http://static.dmtc-devel.org/<resource path>. 
+  
