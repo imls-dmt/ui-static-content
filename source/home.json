@@ -6,27 +6,27 @@
   "hero_images":[
     {
       "alt_text":"Thumbnail image of USGS Science Support Framework",
-      "description":"US Geological Survey Community for Data Integration's Science Support Framework.  This image illustrates the components of the framework",
+      "description":"US Geological Survey Community for Data Integration's Science Support Framework.",
       "image_link":"http://static.dmtc-devel.org/images/frameworks/cdi-ssf-components.jpg"
     },
     {
       "alt_text":"Thumbnail image of DataONE Data Lifecycle",
-      "description":"This image illustrates the DataONE Data Lifecycle components",
+      "description":"DataONE Data Lifecycle components",
       "image_link":"http://static.dmtc-devel.org/images/frameworks/DataONE_DLC2015_sm.jpg"
     },
     {
       "alt_text":"Thumbnail image of Digital Curation Centre Data lifecycle",
-      "description":"This image illustrates the components of the UK Digital Curatior Centre's Data lifecycle",
-      "image_link":"http://static.dmtc-devel.org/images/frameworks/DCC-lifecycle_web.jpg"
+      "description":"Components of the UK Digital Curatior Centre's Data lifecycle",
+      "image_link":"http://static.dmtc-devel.org/images/frameworks/DCC_lifecycle_web.jpg"
     },
     {
       "alt_text":"Thumbnail image of FGDC Data Lifecycle",
-      "description":"This image illustraties the US Federal Geographic Data Committee's Data lifecycle model",
+      "description":"US Federal Geographic Data Committee's Data lifecycle model",
       "image_link":"http://static.dmtc-devel.org/images/frameworks/FGDC_DataLifecycleModelsandConceptsv13.jpg"
     },
      {
       "alt_text":"Thumbnail image of IWGDD Digital Data lifecycle model",
-      "description":"This image illustrates the US Interagency Working Group on Digital Data's digital data lifecycle model",
+      "description":"US Interagency Working Group on Digital Data's digital data lifecycle model",
       "image_link":"http://static.dmtc-devel.org/images/frameworks/IWGDD_Harnessing_Power_Web.jpg"
     }
   ],
