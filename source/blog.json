@@ -1,0 +1,19 @@
+{
+	"news":[
+		{
+			"author":"Me, myself, and I",
+			"date":"2021-05-13T14:52:16Z",
+			"title":"my great news story",
+			"thumbnail":"http://static.dmtc-devel.org/images/frameworks/cdi-ssf-components.jpg",
+			"content":"http://static.dmtc-devel.org/source/blog/news_001.md"
+		},
+		{
+			"author":"Me, myself, and I",
+			"date":"2021-05-17T12:00:00Z",
+			"title":"another great news story",
+			"thumbnail":"http://static.dmtc-devel.org/images/frameworks/dataone-mini.png",
+			"content":"http://static.dmtc-devel.org/source/blog/news_002.md"
+		}
+
+	],
+}
