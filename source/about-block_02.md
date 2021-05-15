@@ -1,10 +1,14 @@
-# The DMTC Community and how we connect 
-The Data Management Training Clearinghouse was initiated by three geoscience communities: **Earth Science Information Partners (ESIP)**, **US Geological Survey (USGS)** and **DataONE**.  Subgroups from each of those communities interested in education and training on research data management issues had created educational resources on related topics for their own researchers and data specialists who wanted to learn specific skills related to geoscience data management, but found that the learners could not find the educational resources! Determined to improve that situation, the Data Management Training Clearinghouse was launched with seed funding from the USGS Community for Data Integration.
+# Welcome to the DMTC   
+The Data Management Training Clearinghouse (DMTC) is a searchable registry for information about online learning resources and training materials on topics related to research data management, and data skillbuilding.  The DMTC was initiated by three geoscience communities: [Earth Science Information Partners (ESIP)](http://esipfed.org/), [US Geological Survey (USGS)](https://www.usgs.gov/products/data-and-tools/data-management) and [DataONE](https://www.dataone.org/).  Prior to the development of the DMTC, subgroups from each of those communities interested in education and training on research data management issues had created educational resources on related topics for their own researchers and data specialists who wanted to learn specific skills related to geoscience data management.  After the resources had been created, however, each subgroup but found that the learners they were targeting were not finding the educational resources! Determined to improve that situation, the DMTC was launched with seed funding from the [USGS Community for Data Integration (USGS CDI)](https://www2.usgs.gov/cdi).  
 
-## Our Stakeholders
+Originally hosted by ESIP and supported by ESIP's Data Stewardship Committee, subsequent funding has been granted by an Institute of Museum and Library Services National Leadership Grant [LG-70-18-0092-18](https://www.imls.gov/grants/awarded/lg-70-18-0092-18) that has enabled a more broader and more diverse collection of learning resources that has moved into other scientific domains including Social Sciences, and Arts and Humanities.  Designed and developed in collaboration with ESIP, USGS CDI, and DataONE, with subsequent support from the [University of New Mexico Libraries Research Data Services](https://library.unm.edu/services/data.php) and [Knowledge Motifs LLC](http://kmotifs.com), the DMTC is available for registering, documenting, publishing, searching and assessing information about the curated learning resource collections within its inventory.
+
+## Our Stakeholders and Community 
 
 ### Learners
 
 ### Educators & Trainers  
+
+## How We Connect
 
 
