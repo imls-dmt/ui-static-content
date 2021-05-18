@@ -1,0 +1,27 @@
+{
+	  "description": "Learning Resources Schema", 
+	  "fields": [
+		{
+		  "name": "abstract_data", 
+		  "type": "General Text", 
+		  "multivalue": false, 
+		  "required": false,
+		  "title": "",
+		  "description": "",
+		  "scopeNotes":"",
+		  "controlledVocabulary": {
+			"source":"",
+			"terms":[
+				{
+					"term":"",
+					"mapsTo": {
+						"term": "",
+						"source": "",
+						"relationship": ""
+					}
+				}
+			]  
+		  }
+		},
+		...
+}
