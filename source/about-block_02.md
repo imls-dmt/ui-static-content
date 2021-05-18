@@ -3,7 +3,8 @@ The Data Management Training Clearinghouse (DMTC) is a searchable registry for i
 
 Originally hosted by ESIP and supported by ESIP's Data Stewardship Committee, subsequent funding has been granted by an Institute of Museum and Library Services National Leadership Grant [LG-70-18-0092-18](https://www.imls.gov/grants/awarded/lg-70-18-0092-18) that has enabled a more broader and more diverse collection of learning resources that has moved into other scientific domains including Social Sciences, and Arts and Humanities.  Designed and developed in collaboration with ESIP, USGS CDI, and DataONE, with subsequent support from the [University of New Mexico Libraries Research Data Services](https://library.unm.edu/services/data.php) and [Knowledge Motifs LLC](http://kmotifs.com), the DMTC is available for registering, documenting, publishing, searching and assessing information about the curated learning resource collections within its inventory.
 
-## Our Stakeholders and Community 
+## The Communities We Target
+While the DMTC started with a focus upon geoscience researchers, data specialists who work with researchers, and skills instructors, the range and diversity of the learning and teaching content published within the DMTC has grown exponentially as the availability of quality content has increased.  In addition, the focus of content has broadened as the research data communnities in the physical sciences, social sciences, and arts and humanities have begun to recognize the need for research data management skills and capacity building for those who work with researchers throughout the research and data lifecycles.  In particular, the focus for the resources in the DMTC have been upon people who are skills learners and those who are educators and trainers.
 
 ### Learners
 
