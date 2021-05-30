@@ -5,9 +5,9 @@
 		  "name": "abstract_data", 
 		  "type": "General Text", 
 		  "multivalue": false, 
-		  "required": false,
-		  "title": "",
-		  "description": "",
+		  "required": true,
+		  "title": "Description",
+		  "definition": "A brief synopsis or abstract about the learning resource",
 		  "scopeNotes":"",
 		  "controlledVocabulary": {
 			"source":"",
