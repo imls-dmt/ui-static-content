@@ -2,6 +2,9 @@
 	  "description": "Learning Resources Schema", 
 	  "fields": [
 		{
+		  "@context": "https://schema.org/",
+		  "@type": "CreativeWork",
+		  "name": "abstract",
 		  "name": "abstract_data", 
 		  "type": "General Text", 
 		  "multivalue": false, 
