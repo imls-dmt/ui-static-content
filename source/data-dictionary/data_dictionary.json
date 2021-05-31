@@ -68,7 +68,7 @@
 				{
 					"term":"",
 					"mapsTo": {
-						"term": "Collaborator","Conceptualization","Data curation and stewardship","Endorser","Final product","Formal analysis","Funding and sponsorship","Illustration","investigation and raw data production","Methodology","Organizer","Other","Product administration and management","Resources","Software","Validation","Visualization","Voiceover video performer","Writing - original draft","Writing - review & editing",  
+						"term": ["Collaborator","Conceptualization","Data curation and stewardship","Endorser","Final product","Formal analysis","Funding and sponsorship","Illustration","investigation and raw data production","Methodology","Organizer","Other","Product administration and management","Resources","Software","Validation","Visualization","Voiceover video performer","Writing - original draft","Writing - review & editing"],  
 						"source": "LRMI Terms",
 						"relationship": ""
 					}
