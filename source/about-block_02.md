@@ -11,15 +11,18 @@ While the DMTC started with a focus upon geoscience researchers, data specialist
 
 Image by <a href="https://pixabay.com/users/dimhou-5987327/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2536662">Dim Hou</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2536662">Pixabay</a>
 
-The DMTC recognizes that learners come from different perspectives as they approach research data skillbuilding.  Some may come from a "formal" education environment that usually returns credits and degrees for the effort applied to learning data skills.  Others may come from an "informal" education framework that may supplement formal education and training or be applied to "professional development" needs desired for job-related skillbuilding and which may return a "badge" or "certification" for learners' efforts.  In either case, the intention of DMTC curators is to provide descriptive information about the resources in the DMTC that will help learners *discover* resources which may work for their needs, but also more easily and effectively *choose* which resources are fit for their purpose in learning.  Learn more about the metadata terms used to describe DMTC resources on the Support pages.   
+Learners come from different perspectives as they approach research data skillbuilding.  Some may come from a "formal" education environment that usually returns credits and degrees for the effort applied to learning data skills.  Others may come from an "informal" education framework that may supplement formal education and training or be applied to "professional development" needs desired for job-related skillbuilding and which may return a "badge" or "certification" for learners' efforts.  In either case, the intention of DMTC curators is to provide descriptive information about the resources in the DMTC that will help learners *discover* resources which may work for their needs, but also more easily and effectively *choose* which resources are fit for their purpose in learning.  Learn more about the metadata terms used to describe DMTC resources on the Support pages.   
 
 ### Educators & Trainers 
 ![Computerboard-409582_640](https://user-images.githubusercontent.com/5191071/124034857-990a6980-d9b0-11eb-8d8a-a2848602c477.jpg)
 
 Image by <a href="https://pixabay.com/users/delphinmedia-348407/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=409582">Jens P. Raak</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=409582">Pixabay</a>
 
+Educators and trainers of research data skills in both formal settings such as universities and data centers and trainers and in more informal venues can be learners, but their needs as seekers of learning resources to use or adapt for teaching provide the motivation for the additional DMTC focus upon providing the descriptive and assessment information about learning resources that will be helpful to those who teach.  This focus is represented by the metadata terms used to describe resources such as the *audience* to which a resource is targeted upon creation, and the "license" under which the resource can be reused.  In addition, annotations made by users of the resources that have been submitted are visible as part of the descriptive information for each resource. Learn more about the metadata terms and assessment informatin used to describe DMTC resources on the Support pages.
+
 ## Code of Participation
 
 ## Contact us
+
 
 
