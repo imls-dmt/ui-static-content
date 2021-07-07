@@ -1,4 +1,4 @@
-{
+
 	  "description": "Learning Resources Schema", 
 	  "fields": [
 		{
@@ -7,7 +7,7 @@
 		  "name": "abstract",
 		  "mapsToSchemaOrg": {
 			"property":"abstract",
-			"@type": "Thing/CreativeWork/LearingResource",
+			"@type": "Thing/CreativeWork/LearningResource",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
 		      },
@@ -17,7 +17,7 @@
 		  "required": true,
 		  "title": "Description",
 		  "definition": "A brief synopsis or abstract about the learning resource",
-		  "scopeNotes":"",
+		  "scopeNotes":"Description can include the relationship of this resource to others, if applicable, e.g., a part within a series or collection, and the existence of translations of the resource into other languages.",
 		  "controlledVocabulary": {
 			"source":"",
 			"terms":[
@@ -33,17 +33,78 @@
 			]  
 		  }
 		},
-		  {
+{
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
-		  "name": "name",
-			  "name": "title",
-			  "type": "General Text",
+		  "name": "access-cost",
+		  "mapsToSchemaOrg": {
+			"property":"isAccessibleForFree",
+			"@type": "Thing/CreativeWork/LearningResource",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },
+			  "name": "Access Cost",
+			  "type": "Boolean",
 			  "multivalue": "false",
 			  "required": "true",
-			  "title": "Title",
-			  "definition": "The title of the resource",
-			  "scopeNotes": "The title should be taken from the resource itself.  Each word in the title should be capitalized except for connectors are verbs.  If there is a subtitle, only the first word of the subtitle should be capitalized.", 
+			  "title": "Access Cost",
+			  "definition": "Yes or No choice stating whether othere is a fee for access to or use of the resource.",
+			  "scopeNotes": "If no explicit information is available related to cost, use the default of No."
+			  "controlledVocabulary:" {
+				"source":"",
+				"terms":[
+				{
+					"term":"Yes", "No",
+					"mapsTo": {
+						"term": "",
+						"source": "",
+						"relationship": ""
+					}
+				}
+				
+			]  
+		  },
+		  "@context": "https://schema.org/",
+		  "@type": "CreativeWork",
+		  "name": "accessibility_reatures.name",
+		  "mapsToSchemaOrg": {
+			"property":"accessibilityFeature",
+			"@type": "Thing/CreativeWork/",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },
+			  "name": "Accessibility Features",
+			  "type": "Boolean",
+			  "multivalue": "false",
+			  "required": "false",
+			  "title": "Accessibilty Features",
+			  "definition": "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility.",
+			  "scopeNotes": "W3c's WebSchemas wiki lists possible values. See:   https://www.w3.org/wiki/WebSchemas/Accessibility.  The values used reflect the tools used to evaluate the resources."
+			  "controlledVocabulary:" {
+				"source":"https://www.w3.org/wiki/WebSchemas/Accessibility",
+				"terms":[
+				{
+					"term":"alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none",
+					"mapsTo": {
+						"term": "alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none",
+						"source": "https://www.w3.org/wiki/WebSchemas/Accessibility",
+						"relationship": "same-as"
+					}
+				}
+				
+			]  
+		  },
+{
+		  "@context": "https://schema.org/",
+		  "@type": "CreativeWork",
+		  "name": "accessibility_summary",
+			  "name": "Accessibility Summary",
+			  "type": "General Text",
+			  "multivalue": "false",
+			  "required": "false",
+			  "title": "Accessibility Summary",
+			  "definition": "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as 'short descriptions are present but long descriptions will be needed for non-visual users' or 'short descriptions are present and no long descriptions are needed.'",
+			  "scopeNotes": "Unless a tool is used to evaluate the resource, the description of accessibility features or deficiencies should be provided by the content creator.", 
 			 "controlledVocabulary": {
 				 			"source":"",
 			"terms":[
@@ -82,5 +143,29 @@
 				
 			]  
 		  },			  
-		...
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "CreativeWork",
+		  "name": "name",
+			  "name": "title",
+			  "type": "General Text",
+			  "multivalue": "false",
+			  "required": "true",
+			  "title": "Title",
+			  "definition": "The title of the resource",
+			  "scopeNotes": "The title should be taken from the resource itself.  Each word in the title should be capitalized except for connectors are verbs.  If there is a subtitle, only the first word of the subtitle should be capitalized.", 
+			 "controlledVocabulary": {
+				 			"source":"",
+			"terms":[
+				{
+					"term":"",
+					"mapsTo": {
+						"term": "",
+						"source": "",
+						"relationship": ""
+					}
+				}
+				
+			]  
+		  },
 }
