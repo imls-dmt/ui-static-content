@@ -54,7 +54,7 @@
 				"source":"",
 				"terms":[
 				{
-					"term":"Yes", "No",
+					"term": ["Yes", "No"],
 					"mapsTo": {
 						"term": "",
 						"source": "",
@@ -66,7 +66,7 @@
 		  },
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
-		  "name": "accessibility_reatures.name",
+		  "name": "accessibility_features.name",
 		  "mapsToSchemaOrg": {
 			"property":"accessibilityFeature",
 			"@type": "Thing/CreativeWork/",
@@ -84,9 +84,9 @@
 				"source":"https://www.w3.org/wiki/WebSchemas/Accessibility",
 				"terms":[
 				{
-					"term":"alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none",
+					"term": "alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none"],
 					"mapsTo": {
-						"term": "alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none",
+						"term": ["alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none",
 						"source": "https://www.w3.org/wiki/WebSchemas/Accessibility",
 						"relationship": "same-as"
 					}
@@ -119,6 +119,37 @@
 				
 			]  
 		  },
+		"@context": "https://schema.org/",
+		"@type": "CreativeWork",
+		"name": "author_org.name",
+		"mapsToSchemaOrg": {
+			"property": "author',
+			"@type": "Thing/CreativeWork/organization",
+			"@context": "https://schema.org/",
+			"@relationship": "same-as"
+		},
+		"name": "author_org.name",
+		"type": "General Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Authoring Organization Name",
+		"definition": "Name of organization authoring the resource.",
+		"scopeNotes": "Enter the name of the organization authoring the resource if no personal name(s) of an author are known.  This is not intended to be the organization to which a personal author is associated.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": '',
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
+			
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "name",
