@@ -146,7 +146,6 @@
 				}
 				}
 			]
-		}
 		},
 		"@context": "https://schema.org/",
 		"@type": "Thing",
@@ -176,8 +175,6 @@
 				}
 				}
 			]
-		}
-		},
 		},
 		"@context": "https://schema.org/",
 		"@type": "Thing",
@@ -207,7 +204,6 @@
 				}
 				}
 			]
-		}
 		},
 		"@context": "https://schema.org/",
 		"@type": "Thing",
@@ -237,8 +233,6 @@
 				}
 				}
 			]
-		}
-		},
 		},
 		"@context": "https://schema.org/",
 		"@type": "Thing",
@@ -268,7 +262,6 @@
 				}
 				}
 			]
-		}
 		},
 		"@context": "https://schema.org/",
 		"@type": "Thing/Person",
@@ -298,7 +291,6 @@
 				}
 				}
 			]
-		}
 		},
 		"@context": "https://schema.org/",
 		"@type": "Thing/Person",
@@ -328,7 +320,6 @@
 				}
 				}
 			]
-		}
 		},
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
@@ -354,7 +345,6 @@
 				
 			]  
 		  },			  
-		{
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "name",
