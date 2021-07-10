@@ -84,9 +84,9 @@
 				"source":"https://www.w3.org/wiki/WebSchemas/Accessibility",
 				"terms":[
 				{
-					"term": "alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none"],
+					"term": ["alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none"],
 					"mapsTo": {
-						"term": ["alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none",
+						"term": ["alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none"],
 						"source": "https://www.w3.org/wiki/WebSchemas/Accessibility",
 						"relationship": "same-as"
 					}
@@ -124,7 +124,7 @@
 		"name": "author_org.name",
 		"mapsToSchemaOrg": {
 			"property": "author',
-			"@type": "Thing/CreativeWork/organization",
+			"@type": "organization",
 			"@context": "https://schema.org/",
 			"@relationship": "same-as"
 		},
