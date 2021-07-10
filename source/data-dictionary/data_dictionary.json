@@ -140,7 +140,7 @@
 				{
 					"term": "",
 					"mapsTo": {
-						"term": '',
+						"term": "",
 					"source": "",
 					"relationship": ""
 				}
@@ -148,7 +148,188 @@
 			]
 		}
 		},
-			
+		"@context": "https://schema.org/",
+		"@type": "Thing",
+		"name": "author_org.name_identifier",
+		  "mapsToSchemaOrg": {
+			"property":"value",
+			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "author_org.name_identifier",
+		"type": "Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Authoring Organization Identifier",
+		"definition": "The unique identifier for the organization authoring the resource.",
+		"scopeNotes": "Enter the identifier for the organization authoring the resource as text. See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
+		},
+		"@context": "https://schema.org/",
+		"@type": "Thing",
+		"name": "author_org.name_identifier_type",
+		  "mapsToSchemaOrg": {
+			"property":"valueReference",
+			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "author_org.name_identifier_type",
+		"type": "text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Authoring Organization Identifier Scheme",
+		"definition": "The identifier scheme associated with the unique identifier for the organization authoring the resource.",
+		"scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "ROR", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
+		"@context": "https://schema.org/",
+		"@type": "Thing",
+		"name": "authors.name_identifier",
+		  "mapsToSchemaOrg": {
+			"property":"value",
+			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "authors.name_identifier",
+		"type": "Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Author Personal Identifier",
+		"definition": "The unique identifier for the person(s) authoring the resource.",
+		"scopeNotes": "Enter the identifier for the person(s) authoring the resource as text. See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
+		},
+		"@context": "https://schema.org/",
+		"@type": "Thing",
+		"name": "authors.name_identifier_type",
+		  "mapsToSchemaOrg": {
+			"property":"valueReference",
+			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "authors.name_identifier_type",
+		"type": "text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Author(s) Personal Identifier Scheme",
+		"definition": "The identifier scheme associated with the unique identifier for the person(s) authoring the resource, e.g., ORCID.",
+		"scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "ORCID", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
+		"@context": "https://schema.org/",
+		"@type": "Thing/Person",
+		"name": "authors.familyName",
+		  "mapsToSchemaOrg": {
+			"property":"familyName",
+			"@type": "Thing/Person",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "authors.familyName",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Author Family/Last Name",
+		"definition": "Last or family name of person(s) authoring the resource.",
+		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., El Saffar.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
+		"@context": "https://schema.org/",
+		"@type": "Thing/Person",
+		"name": "authors.givenName",
+		  "mapsToSchemaOrg": {
+			"property":"givenName",
+			"@type": "Thing/Person",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "authors.givenName",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Author Given/First Name",
+		"definition": "Given or first name of person(s) authoring the resource.",
+		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., Ruth S.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		}
+		},
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "name",
