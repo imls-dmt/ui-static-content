@@ -94,7 +94,6 @@
 				
 			]  
 		  },
-{
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "accessibility_summary",
@@ -122,12 +121,12 @@
 		"@context": "https://schema.org/",
 		"@type": "CreativeWork",
 		"name": "author_org.name",
-		"mapsToSchemaOrg": {
-			"property": "author',
-			"@type": "organization",
+		  "mapsToSchemaOrg": {
+			"property":"author",
+			"@type": "Thing/CreativeWork/organization",
 			"@context": "https://schema.org/",
-			"@relationship": "same-as"
-		},
+			"relationship": "same-as"
+		      },		
 		"name": "author_org.name",
 		"type": "General Text",
 		"multivalue": "false",
