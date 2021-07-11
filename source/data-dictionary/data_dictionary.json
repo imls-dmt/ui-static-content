@@ -205,7 +205,66 @@
 				}
 			]
 		},
+		
 		"@context": "https://schema.org/",
+		"@type": "Thing/Person",
+		"name": "authors.familyName",
+		  "mapsToSchemaOrg": {
+			"property":"familyName",
+			"@type": "Thing/Person",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "authors.familyName",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Author Family/Last Name",
+		"definition": "Last or family name of person(s) authoring the resource.",
+		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., El Saffar.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+		"@context": "https://schema.org/",
+		"@type": "Thing/Person",
+		"name": "authors.givenName",
+		  "mapsToSchemaOrg": {
+			"property":"givenName",
+			"@type": "Thing/Person",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      },		
+		"name": "authors.givenName",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Author Given/First Name",
+		"definition": "Given or first name of person(s) authoring the resource.",
+		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., Ruth S.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+"@context": "https://schema.org/",
 		"@type": "Thing",
 		"name": "authors.name_identifier",
 		  "mapsToSchemaOrg": {
@@ -264,21 +323,21 @@
 			]
 		},
 		"@context": "https://schema.org/",
-		"@type": "Thing/Person",
-		"name": "authors.familyName",
+		"@type": "CreativeWork",
+		"name": "citation",
 		  "mapsToSchemaOrg": {
-			"property":"familyName",
-			"@type": "Thing/Person",
+			"property":"citation",
+			"@type": "CreativeWork",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
 		      },		
-		"name": "authors.familyName",
-		"type": "General text",
+		"name": "citation",
+		"type": "text",
 		"multivalue": "false",
 		"required": "false",
-		"title": "Author Family/Last Name",
-		"definition": "Last or family name of person(s) authoring the resource.",
-		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., El Saffar.",
+		"title": "Citation",
+		"definition": "Preferred Form of Citation.",
+		"scopeNotes": "The citation should be taken from the content creator as part of submission or taken from the resource landing page.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -293,26 +352,82 @@
 			]
 		},
 		"@context": "https://schema.org/",
-		"@type": "Thing/Person",
-		"name": "authors.givenName",
+		"@type": "CreativeWork",
+		"name": "completion_time",
 		  "mapsToSchemaOrg": {
-			"property":"givenName",
-			"@type": "Thing/Person",
+			"property":"timeRequired",
+			"@type": "CreativeWork",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
 		      },		
-		"name": "authors.givenName",
-		"type": "General text",
+		"name": "completion_time",
+		"type": "text",
 		"multivalue": "false",
 		"required": "false",
-		"title": "Author Given/First Name",
-		"definition": "Given or first name of person(s) authoring the resource.",
-		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., Ruth S.",
+		"title": "Intended Time to Complete",
+		"definition": "Approximate or typical time it takes to work with or through the  resource for the typical, intended target audience.",
+		"scopeNotes": "If specific duration of resource is not available from the resource itself, e.g., the timing on a video, or from the resource landing page, an estimated time should be entered.",
 		"controlledVocabulary": {
+			"source": "DMTC-generated",
+			"terms": [
+				{
+					"term": ["Up to 1 hour", "More than 1 hour, but less than 1 day", "More than 1 day, but less than 1 week", "More than 1 week", "Unknown"],
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+		"@context": "http://www.w3.org/2006/vcard/ns#hasEmail",
+		"@type": "Class",
+		"name": "hasEmail",
+		  "mapsToSchemaOrg": {
+			"property":"",
+			"@type": "",
+			"@context": "",
+			"relationship": ""
+		      },		
+		"name": "contact.email",
+		"type": "text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Contact Email Address",
+		"definition": "Email address of person or organization that has been asserted as the contact for the resource.",
+		"scopeNotes": "": {
 			"source": "",
 			"terms": [
 				{
-					"term": "", 
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+		"@context": "http://purl.org/dc/terms/",
+		"@type": "Class",
+		"name": "Agent",
+		  "mapsToSchemaOrg": {
+			"property":"",
+			"@type": "",
+			"@context": "",
+			"relationship": ""
+		      },		
+		"name": "contact.name",
+		"type": "text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Contact Person(s)",
+		"definition": "Name of person(s) who has/have been asserted as the contact(s) for the resource in case of questions or follow-up by resource user.",
+		"scopeNotes": "": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
 					"mapsTo": {
 						"term": "",
 					"source": "",
