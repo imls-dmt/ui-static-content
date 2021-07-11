@@ -395,7 +395,7 @@
 		"required": "false",
 		"title": "Contact Email Address",
 		"definition": "Email address of person or organization that has been asserted as the contact for the resource.",
-		"scopeNotes": "": {
+		"scopeNotes": "", {
 			"source": "",
 			"terms": [
 				{
@@ -423,7 +423,7 @@
 		"required": "false",
 		"title": "Contact Person(s)",
 		"definition": "Name of person(s) who has/have been asserted as the contact(s) for the resource in case of questions or follow-up by resource user.",
-		"scopeNotes": "": {
+		"scopeNotes": "", {
 			"source": "",
 			"terms": [
 				{
