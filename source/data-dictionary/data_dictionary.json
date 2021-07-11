@@ -395,7 +395,7 @@
 		"required": "false",
 		"title": "Contact Email Address",
 		"definition": "Email address of person or organization that has been asserted as the contact for the resource.",
-		"scopeNotes": "", {
+		"scopeNotes": "", 
 			"source": "",
 			"terms": [
 				{
