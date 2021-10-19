@@ -24,7 +24,7 @@
       "title": "A great resource",
       "thumbnail": "static/images/frameworks/cdi-ssf-components.jpg",
       "associated-resources": [],
-      "content": "/static/source/blog/feature_001.md"
+      "content": "http://deploy.dmtc-devel.org/static/source/blog/feature_001.md"
     },
     {
       "author": "Me, myself, and I",
