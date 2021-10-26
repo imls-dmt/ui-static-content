@@ -4,17 +4,17 @@
       "author": "Me, myself, and I",
       "date": "2021-05-13T14:52:16Z",
       "title": "my great news story",
-      "thumbnail": "http://static.dmtc-devel.org/images/frameworks/cdi-ssf-components.jpg",
+      "thumbnail": "/images/frameworks/cdi-ssf-components.jpg",
       "associated-resources": [],
-      "content": "http://static.dmtc-devel.org/source/blog/news_001.md"
+      "content": "/source/blog/news_001.md"
     },
     {
       "author": "Me, myself, and I",
       "date": "2021-05-17T12:00:00Z",
       "title": "another great news story",
-      "thumbnail": "http://static.dmtc-devel.org/images/frameworks/dataone-mini.png",
+      "thumbnail": "/images/frameworks/dataone-mini.png",
       "associated-resources": [],
-      "content": "http://static.dmtc-devel.org/source/blog/news_002.md"
+      "content": "/source/blog/news_002.md"
     }
   ],
   "features": [
@@ -22,17 +22,17 @@
       "author": "Me, myself, and I",
       "date": "2021-05-13T14:52:16Z",
       "title": "A great resource",
-      "thumbnail": "static/images/frameworks/cdi-ssf-components.jpg",
+      "thumbnail": "/images/frameworks/cdi-ssf-components.jpg",
       "associated-resources": [],
-      "content": "http://deploy.dmtc-devel.org/static/source/blog/feature_001.md"
+      "content": "/source/blog/feature_001.md"
     },
     {
       "author": "Me, myself, and I",
       "date": "2021-05-17T12:00:00Z",
       "title": "another great resource",
-      "thumbnail": "http://static.dmtc-devel.org/images/frameworks/dataone-mini.png",
+      "thumbnail": "/images/frameworks/dataone-mini.png",
       "associated-resources": [],
-      "content": "http://static.dmtc-devel.org/source/blog/feature_002.md"
+      "content": "/source/blog/feature_002.md"
     }
   ],
   "announcements": [
@@ -40,17 +40,17 @@
       "author": "Me, myself, and I",
       "date": "2021-05-13T14:52:16Z",
       "title": "Announcement A",
-      "thumbnail": "http://static.dmtc-devel.org/images/frameworks/cdi-ssf-components.jpg",
+      "thumbnail": "/images/frameworks/cdi-ssf-components.jpg",
       "associated-resources": [],
-      "content": "http://static.dmtc-devel.org/source/blog/announce_001.md"
+      "content": "/source/blog/announce_001.md"
     },
     {
       "author": "Me, myself, and I",
       "date": "2021-05-17T12:00:00Z",
       "title": "Announcement B",
-      "thumbnail": "http://static.dmtc-devel.org/images/frameworks/dataone-mini.png",
+      "thumbnail": "/images/frameworks/dataone-mini.png",
       "associated-resources": [],
-      "content": "http://static.dmtc-devel.org/source/blog/announce_002.md"
+      "content": "/source/blog/announce_002.md"
     }
   ]
 }
