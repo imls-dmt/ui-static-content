@@ -23,11 +23,11 @@ Educators and trainers of research data skills in both formal settings such as u
 ## Code of Participation
 The learning resources registered in the DMTC come from a number of different training and education communities.  We welcome contributions from academia, non-profits, government agencies, for profit, and independent scholar educators whose focus is upon teaching data and data management skills important for conducting productive and responsible research, and creating useful, trustworthy scholarly research data.  Contributions to the DMTC may take the form of:
 
-*submitting learning resources to be considered for inclusion in the registry per the [Selection Guidelines](https://github.com/imls-dmt/resources-workflow/blob/master/Nov17_2018_SelectionCriteria.pdf)
-*augmenting metadata descriptions of learning resources submitted to the DMTC per the LRMI-adapted DMTC metadata schema used
-*performing quality assurance review and augmentation of learning resources descriptions per the LRMI-adapted DMTC metadata schema 
-*providing editorial review and final registration of the learning resources submitted to the DMTC
-*submitting assessment and user feedback on the learning resources registered in the DMTC
+* submitting learning resources to be considered for inclusion in the registry per the [Selection Guidelines](https://github.com/imls-dmt/resources-workflow/blob/master/Nov17_2018_SelectionCriteria.pdf)
+* augmenting metadata descriptions of learning resources submitted to the DMTC per the LRMI-adapted DMTC metadata schema used
+* performing quality assurance review and augmentation of learning resources descriptions per the LRMI-adapted DMTC metadata schema 
+* providing editorial review and final registration of the learning resources submitted to the DMTC
+* submitting assessment and user feedback on the learning resources registered in the DMTC
 
 As an affiliate of ESIP (Earth Science Information Partners), we ask our contributors to adhere to the ESIP Community Participation Guidelines found at:  https://www.esipfed.org/about/community-guidelines.
 
