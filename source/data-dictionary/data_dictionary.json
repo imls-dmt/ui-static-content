@@ -1,39 +1,50 @@
-
-	  "description": "Learning Resources Schema", 
-	  "fields": [
-		{
-		  "@context": "",
-		  "@type": "CreativeWork",
-		  "name": "abstract",
-		  "mapsToSchemaOrg": {
-			"property":"abstract",
-			"@type": "Thing/CreativeWork/LearningResource",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },
-		  "name": "abstract_data", 
-		  "type": "General Text", 
-		  "multivalue": false, 
-		  "required": true,
-		  "title": "Description",
-		  "definition": "A brief synopsis or abstract about the learning resource",
-		  "scopeNotes":"Description can include the relationship of this resource to others, if applicable, e.g., a part within a series or collection, and the existence of translations of the resource into other languages.",
-		  "controlledVocabulary": {
-			"source":"",
-			"terms":[
-				{
-					"term":"",
-					"mapsTo": {
-						"term": "",
-						"source": "",
-						"relationship": ""
-					}
-				}
-				
-			]  
-		  }
-		},
 {
+  "description": "Learning Resources Schema",
+  "fields": {
+    "abstract_data": {
+      "schemaOrg": {
+        "@context": "",
+        "@type": "CreativeWork",
+        "name": "abstract",
+        "mapsToSchemaOrg": {
+          "property": "abstract",
+          "@type": "Thing/CreativeWork/LearningResource",
+          "@context": "https://schema.org/",
+          "relationship": "same-as"
+        }
+      },
+      "documentation": {
+        "name": "abstract_data",
+        "type": "General Text",
+        "multivalue": false,
+        "required": true,
+        "title": "Description",
+        "definition": "A brief synopsis or abstract about the learning resource",
+        "scopeNotes": "Description can include the relationship of this resource to others, if applicable, e.g., a part within a series or collection, and the existence of translations of the resource into other languages.",
+        "controlledVocabulary": {
+          "source": "",
+          "terms": [
+            {
+              "term": "",
+              "mapsTo": {
+                "term": "",
+                "source": "",
+                "relationship": ""
+              }
+            }
+          ]
+        }
+      },
+      "rendering": {
+        "html": {
+          "type": "input",
+          "input_type": "textarea"
+        }
+      }
+    }
+  }
+}
+		"access_cost":{
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "access-cost",
@@ -484,4 +495,5 @@
 				
 			]  
 		  },
+}
 }
