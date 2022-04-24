@@ -42,39 +42,48 @@
         }
       }
     }
-  }
-}
-		"access_cost":{
-		  "@context": "https://schema.org/",
-		  "@type": "CreativeWork",
-		  "name": "access-cost",
-		  "mapsToSchemaOrg": {
-			"property":"isAccessibleForFree",
-			"@type": "Thing/CreativeWork/LearningResource",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },
-			  "name": "Access Cost",
-			  "type": "Boolean",
-			  "multivalue": "false",
-			  "required": "true",
-			  "title": "Access Cost",
-			  "definition": "Yes or No choice stating whether othere is a fee for access to or use of the resource.",
-			  "scopeNotes": "If no explicit information is available related to cost, use the default of No."
-			  "controlledVocabulary:" {
-				"source":"",
-				"terms":[
-				{
-					"term": ["Yes", "No"],
-					"mapsTo": {
-						"term": "",
-						"source": "",
-						"relationship": ""
-					}
-				}
-				
-			]  
-		  },
+  },
+     "access_cost": {
+      "schemaOrg": {
+        "@context": "",
+        "@type": "CreativeWork",
+        "name": "access-cost",
+        "mapsToSchemaOrg": {
+          "property": "isAccessibleForFree",
+          "@type": "Thing/CreativeWork/LearningResource",
+          "@context": "https://schema.org/",
+          "relationship": "same-as"
+        }
+      },
+      "documentation": {
+        "name": "access_cost",
+        "type": "General Text",
+        "multivalue": false,
+        "required": true,
+        "title": "Access Cost",
+        "definition": "Yes or No choice stating whether othere is a fee for access to or use of the resource.",
+        "scopeNotes": "If no explicit information is available related to cost, use the default of No.",
+        "controlledVocabulary": {
+          "source": "",
+          "terms": [
+            {
+              "term": "",
+              "mapsTo": {
+                "term": "",
+                "source": "",
+                "relationship": ""
+              }
+            }
+          ]
+        },
+      "rendering": {
+        "html": {
+          "type": "select",
+          "input_type": ""
+        }
+      }
+    }
+},
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "accessibility_features.name",
