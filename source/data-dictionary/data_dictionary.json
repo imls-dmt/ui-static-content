@@ -138,8 +138,7 @@
           "attribute":  "",
           "input_type": "textarea"
         }
-      }
-},
+      },
     "name":  "author_names",
       "type": "General Text",
       "multivalue": true,
@@ -166,8 +165,7 @@
           "attribute":  "fieldset",
           "input_type": "text"
         }
-      }
-     },
+      }, 
      "name":  "author_org.name",
       "type": "General Text",
       "multivalue": true,
