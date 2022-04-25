@@ -84,90 +84,119 @@
       }
     }
 },
-		  "@context": "https://schema.org/",
-		  "@type": "CreativeWork",
-		  "name": "accessibility_features.name",
-		  "mapsToSchemaOrg": {
-			"property":"accessibilityFeature",
-			"@type": "Thing/CreativeWork/",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },
-			  "name": "Accessibility Features",
-			  "type": "Boolean",
-			  "multivalue": "false",
-			  "required": "false",
-			  "title": "Accessibilty Features",
-			  "definition": "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility.",
-			  "scopeNotes": "W3c's WebSchemas wiki lists possible values. See:   https://www.w3.org/wiki/WebSchemas/Accessibility.  The values used reflect the tools used to evaluate the resources."
-			  "controlledVocabulary:" {
-				"source":"https://www.w3.org/wiki/WebSchemas/Accessibility",
-				"terms":[
-				{
-					"term": ["alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none"],
-					"mapsTo": {
-						"term": ["alternative Text", "annotations", "audioDescription", "captions", "largePrint", "tableOfContents", "timingControl", "none"],
-						"source": "https://www.w3.org/wiki/WebSchemas/Accessibility",
-						"relationship": "same-as"
-					}
-				}
-				
-			]  
-		  },
-		  "@context": "https://schema.org/",
-		  "@type": "CreativeWork",
-		  "name": "accessibility_summary",
-			  "name": "Accessibility Summary",
-			  "type": "General Text",
-			  "multivalue": "false",
-			  "required": "false",
-			  "title": "Accessibility Summary",
-			  "definition": "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as 'short descriptions are present but long descriptions will be needed for non-visual users' or 'short descriptions are present and no long descriptions are needed.'",
-			  "scopeNotes": "Unless a tool is used to evaluate the resource, the description of accessibility features or deficiencies should be provided by the content creator.", 
-			 "controlledVocabulary": {
-				 			"source":"",
-			"terms":[
-				{
-					"term":"",
-					"mapsTo": {
-						"term": "",
-						"source": "",
-						"relationship": ""
-					}
-				}
-				
-			]  
-		  },
-		"@context": "https://schema.org/",
-		"@type": "CreativeWork",
-		"name": "author_org.name",
-		  "mapsToSchemaOrg": {
-			"property":"author",
-			"@type": "Thing/CreativeWork/organization",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },		
-		"name": "author_org.name",
-		"type": "General Text",
-		"multivalue": "false",
-		"required": "false",
-		"title": "Authoring Organization Name",
-		"definition": "Name of organization authoring the resource.",
-		"scopeNotes": "Enter the name of the organization authoring the resource if no personal name(s) of an author are known.  This is not intended to be the organization to which a personal author is associated.",
-		"controlledVocabulary": {
-			"source": "",
-			"terms": [
-				{
-					"term": "",
-					"mapsTo": {
-						"term": "",
-					"source": "",
-					"relationship": ""
-				}
-				}
-			]
-		},
-		"@context": "https://schema.org/",
+        "name": "accessibility_features_name",
+        "type": "General Text",
+        "multivalue": true,
+        "required": false,
+        "title": "Accessibility Features",
+        "definition": "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility.",
+        "scopeNotes": "CV values come from subset of W3C's accessibility features list, as needed at http://www.w3.org/wiki/WebSchemas/Accessibility for summary terms.  More complete terms can be added if desired in later phases.",
+        "controlledVocabulary": {
+          "source": "",
+          "terms": [
+            {
+              "term": "",
+              "mapsTo": {
+                "term": "",
+                "source": "",
+                "relationship": ""
+              }
+            }
+          ]
+        },
+      "rendering": {
+        "html": {
+          "form": "input",
+          "attribute":  "datalist",
+          "input_type": "Checkbox"
+        }
+      }
+     },
+     "name":  "accessibility_summary",
+      "type": "General Text",
+      "multivalue": false,
+      "required": false,
+      "title": "Accessibility Summary",
+      "definition": "A human-readable summary of specific accessibility features or deficiencies.",
+      "scopeNotes": "The summary should be consistent with the accessibility features chosen but can also include more complete descriptions.",
+      "controlledVocabulary": {
+        "source": "",
+        "terms": [
+          {
+            "term": "",
+            "mapsTo": {
+              "term": "",
+              "source": "",
+              "relationship": ""
+            }
+          }
+        ]
+      },
+      "rendering": {
+        "html": {
+          "form": "input",
+          "attribute":  "",
+          "input_type": "textarea"
+        }
+      }
+},
+    "name":  "author_names",
+      "type": "General Text",
+      "multivalue": true,
+      "required": true,
+      "title": "Author List",
+      "definition": "List of authors for a resource derived from the given/first and family/last names of the personal author fields by the system.",
+      "scopeNotes": "Can be list of either one or more individual, or one or more organizations. There is no limit on the number of entries.",
+      "controlledVocabulary": {
+        "source": "",
+        "terms": [
+          {
+            "term": "",
+            "mapsTo": {
+              "term": "",
+              "source": "",
+              "relationship": ""
+            }
+          }
+        ]
+      },
+      "rendering": {
+        "html": {
+          "form": "output",
+          "attribute":  "fieldset",
+          "input_type": "text"
+        }
+      }
+     },
+     "name":  "author_org.name",
+      "type": "General Text",
+      "multivalue": true,
+      "required": false,
+      "title": "Authoring Organization(s)",
+      "definition": "Name of organization authoring the learning resource.",
+      "scopeNotes": "If organization is not clearly designated as the author, the Contributor property should be used.",
+      "controlledVocabulary": {
+        "source": "",
+        "terms": [
+          {
+            "term": "",
+            "mapsTo": {
+              "term": "",
+              "source": "",
+              "relationship": ""
+            }
+          }
+        ]
+      },
+      "rendering": {
+        "html": {
+          "form": "input",
+          "attribute":  "",
+          "input_type": "text"
+        }
+      }
+     },
+"@context": "https://schema.org/",
 		"@type": "Thing",
 		"name": "author_org.name_identifier",
 		  "mapsToSchemaOrg": {
