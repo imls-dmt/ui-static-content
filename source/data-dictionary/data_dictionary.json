@@ -84,6 +84,19 @@
       }
     }
 },
+      "accessibililty_features_name": {
+      "schemaOrg": {
+        "@context": "",
+        "@type": "Thing/CreativeWork/",
+        "name": "accessibilityFeature",
+        "mapsToSchemaOrg": {
+          "property": "accessibilityFeature",
+          "@type": "text",
+          "@context": "https://schema.org/",
+          "relationship": "same-as"
+        }
+      },
+      "documentation": {
         "name": "accessibility_features_name",
         "type": "General Text",
         "multivalue": true,
@@ -112,7 +125,21 @@
         }
       }
      },
-     "name":  "accessibility_summary",
+      "accessibililty_summary": {
+      "schemaOrg": {
+        "@context": "",
+        "@type": "Thing/CreativeWork/",
+        "name": "accessibilitySummary",
+        "mapsToSchemaOrg": {
+          "property": "accessibilitySummary",
+          "@type": "text",
+          "@context": "https://schema.org/",
+          "relationship": "same-as"
+        }
+      },
+	      
+    "documentation": {
+      "name":  "accessibility_summary",
       "type": "General Text",
       "multivalue": false,
       "required": false,
@@ -139,7 +166,20 @@
           "input_type": "textarea"
         }
       },
-    "name":  "author_names",
+ 	"author_names": {
+      	"schemaOrg": {
+          "@context": "",
+          "@type": "Thing/CreativeWork/",
+          "name": "author",
+          "mapsToSchemaOrg": {
+            "property": "author",
+            "@type": "Person, Organization",
+            "@context": "https://schema.org/",
+            "relationship": "same-as"
+        }
+      },	    
+  "documentation": {
+     "name":  "author_names",
       "type": "General Text",
       "multivalue": true,
       "required": true,
@@ -166,13 +206,26 @@
           "input_type": "text"
         }
       }, 
+      "author_org.name": {
+      "schemaOrg": {
+        "@context": "",
+        "@type": "Thing/CreativeWork/",
+        "name": "author",
+        "mapsToSchemaOrg": {
+          "property": "author",
+          "@type": "Person, Organization",
+          "@context": "https://schema.org/",
+          "relationship": "same-as"
+        }
+      },
+     "documentation": {
      "name":  "author_org.name",
       "type": "General Text",
       "multivalue": true,
       "required": false,
-      "title": "Authoring Organization(s)",
+      "title": "Authoring Organization",
       "definition": "Name of organization authoring the learning resource.",
-      "scopeNotes": "If organization is not clearly designated as the author, the Contributor property should be used.",
+      "scopeNotes": "If organization is not clearly designated as the author, the Contributor property should be used. More than one authoring organization can be included.",
       "controlledVocabulary": {
         "source": "",
         "terms": [
@@ -194,35 +247,38 @@
         }
       }
      },
-"@context": "https://schema.org/",
-		"@type": "Thing",
-		"name": "author_org.name_identifier",
-		  "mapsToSchemaOrg": {
-			"property":"value",
-			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },		
-		"name": "author_org.name_identifier",
-		"type": "Text",
-		"multivalue": "false",
-		"required": "false",
-		"title": "Authoring Organization Identifier",
-		"definition": "The unique identifier for the organization authoring the resource.",
-		"scopeNotes": "Enter the identifier for the organization authoring the resource as text. See https://schema.org/docs/datamodel.html#identifierBg for more information.",
-		"controlledVocabulary": {
-			"source": "",
-			"terms": [
-				{
+ "author_org.name_identifier": { 
+ "schema.Org": {
+ "@context": "https://schema.org/",
+	"@type": "Thing",
+	"name": "author_org.name_identifier",
+	"mapsToSchemaOrg": {
+		"property":"value",
+		"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		      },
+  "documentation":  {
+    "name": "author_org.name_identifier",
+	"type": "Text",
+	"multivalue": "false",
+	"required": "false",
+	"title": "Authoring Organization Identifier",
+	"definition": "The unique identifier for the organization authoring the resource.",
+	"scopeNotes": "Enter the identifier for the organization authoring the resource as text. See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+	"controlledVocabulary": {
+		"source": "",
+		"terms": [
+			{
+				"term": "",
+				"mapsTo": {
 					"term": "",
-					"mapsTo": {
-						"term": "",
-					"source": "",
-					"relationship": ""
-				}
-				}
-			]
-		},
+				"source": "",
+				"relationship": ""
+			}
+			}
+		]
+	},
 		"@context": "https://schema.org/",
 		"@type": "Thing",
 		"name": "author_org.name_identifier_type",
