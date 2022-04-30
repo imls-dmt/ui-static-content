@@ -265,7 +265,7 @@
 	"required": "false",
 	"title": "Authoring Organization Identifier",
 	"definition": "The unique identifier for the organization authoring the resource.",
-	"scopeNotes": "Enter the identifier for the organization authoring the resource as text. See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+	"scopeNotes": "Enter the identifier as text for the organization authoring the resource. The ID should be a persistent identifier of a type that is included in the list of identifier types found in the Authoring Organization Identifier Scheme field.",
 	"controlledVocabulary": {
 		"source": "",
 		"terms": [
@@ -279,81 +279,64 @@
 			}
 		]
 	},
-		"@context": "https://schema.org/",
-		"@type": "Thing",
-		"name": "author_org.name_identifier_type",
-		  "mapsToSchemaOrg": {
-			"property":"valueReference",
-			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },		
-		"name": "author_org.name_identifier_type",
-		"type": "text",
-		"multivalue": "false",
-		"required": "false",
-		"title": "Authoring Organization Identifier Scheme",
-		"definition": "The identifier scheme associated with the unique identifier for the organization authoring the resource.",
-		"scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
-		"controlledVocabulary": {
-			"source": "",
-			"terms": [
-				{
-					"term": "ROR", 
-					"mapsTo": {
-						"term": "",
-					"source": "",
-					"relationship": ""
-				}
-				}
-			]
-		},
-		
-		"@context": "https://schema.org/",
-		"@type": "Thing/Person",
-		"name": "authors.familyName",
-		  "mapsToSchemaOrg": {
-			"property":"familyName",
-			"@type": "Thing/Person",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },		
-		"name": "authors.familyName",
-		"type": "General text",
-		"multivalue": "false",
-		"required": "false",
-		"title": "Author Family/Last Name",
-		"definition": "Last or family name of person(s) authoring the resource.",
-		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., El Saffar.",
-		"controlledVocabulary": {
-			"source": "",
-			"terms": [
-				{
-					"term": "", 
-					"mapsTo": {
-						"term": "",
-					"source": "",
-					"relationship": ""
-				}
-				}
-			]
-		},
-		"@context": "https://schema.org/",
-		"@type": "Thing/Person",
-		"name": "authors.givenName",
-		  "mapsToSchemaOrg": {
+	"rendering": {
+          "html": {
+            "form": "input",
+            "attribute":  "",
+            "input_type": "text"
+          }
+        }
+       },
+	"author_org.name_identifier_type": {
+	 "schema.org": {},
+	 "documentation": {
+	   "name": "author_org.name_identifier_type",
+	   "type": "text",
+	   "multivalue": "false",
+	   "required": "false",
+	   "title": "Authoring Organization Identifier Scheme",
+	   "definition": "The identifier scheme associated with the unique identifier for the organization authoring the resource.",
+	    "scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+	    "controlledVocabulary": {
+		"source": "",
+		"terms": [
+			{
+				"term": "", 
+				"mapsTo": {
+					"term": "",
+				"source": "",
+				"relationship": ""
+			}
+			}
+		]
+	},
+	  "rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  },
+	  "authors.givenName": { 
+	  "schema.Org": {
+	  "@context": "https://schema.org/",
+	  "@type": "Thing/Person",
+	  "name": "authors.givenName",
+	  "mapsToSchemaOrg": {
 			"property":"givenName",
 			"@type": "Thing/Person",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
-		      },		
+		      }
+	  },
+	   "documentation": {
 		"name": "authors.givenName",
 		"type": "General text",
 		"multivalue": "true",
 		"required": "false",
-		"title": "Author Given/First Name",
+		"title": "Authoring Person Given/First Name",
 		"definition": "Given or first name of person(s) authoring the resource.",
-		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., Ruth S.",
+		"scopeNotes": "If the given or first name of the author is more than one word or contains an initial, the names should be entered in reading order, e.g., Ruth S.; with multiple authors, add the authors in the same order as a citation, i.e., with primary author first.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -364,25 +347,76 @@
 					"source": "",
 					"relationship": ""
 				}
+			}
+		]
+	},
+		   	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
+		"authors.familyName": {
+		  "schema.Org": {
+			"@context": "https://schema.org/",
+		  "@type": "Thing/Person",
+		  "name": "authors.familyName",
+		  "mapsToSchemaOrg": {
+			  "property":"familyName",
+			  "@type": "Thing/Person",
+			  "@context": "https://schema.org/",
+			  "relationship": "same-as"
+		  }
+		  },
+		  "documentation": {
+		     "name": "authors.familyName",
+		     "type": "General text",
+		     "multivalue": "true",
+		     "required": "false",
+		    "title": "Authoring Person Family/Last Name",
+		    "definition": "Last or family name of person(s) authoring the resource.",
+		"scopeNotes": "If the family or last name of the author is more than one word, the names should be entered in reading order, e.g., El Saffar. with multiple authors, add the authors in the same order as a citation, i.e., with primary author first.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+				"term": "", 
+				"mapsTo": {
+					"term": "",
+					"source": "",
+					"relationship": ""
+				}
 				}
 			]
 		},
-"@context": "https://schema.org/",
-		"@type": "Thing",
+	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
+	"authors.name_identifier": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing",
+	"name": "authors.name_identifier",
+	"mapsToSchemaOrg": {
+		"property":"value",
+		"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},
+	"documentation": {
 		"name": "authors.name_identifier",
-		  "mapsToSchemaOrg": {
-			"property":"value",
-			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
-			"@context": "https://schema.org/",
-			"relationship": "same-as"
-		      },		
-		"name": "authors.name_identifier",
-		"type": "Text",
+		"type": "General Text",
 		"multivalue": "false",
 		"required": "false",
-		"title": "Author Personal Identifier",
+		"title": "Authoring Person Identifier",
 		"definition": "The unique identifier for the person(s) authoring the resource.",
-		"scopeNotes": "Enter the identifier for the person(s) authoring the resource as text. See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+		"scopeNotes": "Enter the identifier as text for the person(s) authoring the resource. The ID should be a persistent identifier of a type that is included in the list of identifier types found in the Authoring Person Identifier Scheme field.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -396,6 +430,13 @@
 				}
 			]
 		},
+	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
 		"@context": "https://schema.org/",
 		"@type": "Thing",
 		"name": "authors.name_identifier_type",
@@ -404,12 +445,14 @@
 			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
-		      },		
+		  }
+		},
+		"documentation": {
 		"name": "authors.name_identifier_type",
-		"type": "text",
+		"type": "General text",
 		"multivalue": "false",
 		"required": "false",
-		"title": "Author(s) Personal Identifier Scheme",
+		"title": "Authoring Person Identifier Scheme",
 		"definition": "The identifier scheme associated with the unique identifier for the person(s) authoring the resource, e.g., ORCID.",
 		"scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
 		"controlledVocabulary": {
@@ -422,9 +465,18 @@
 					"source": "",
 					"relationship": ""
 				}
-				}
-			]
-		},
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  },
+		"citation": {
+		"schema.org": {
 		"@context": "https://schema.org/",
 		"@type": "CreativeWork",
 		"name": "citation",
@@ -433,9 +485,11 @@
 			"@type": "CreativeWork",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
-		      },		
+		  }
+	  },	
+		"documentation": {
 		"name": "citation",
-		"type": "text",
+		"type": "General text",
 		"multivalue": "false",
 		"required": "false",
 		"title": "Citation",
@@ -454,6 +508,15 @@
 				}
 			]
 		},
+		"rendering": {
+		  "html": {
+		    "form": "input",
+		    "attribute": "",
+		    "input_type": "textarea"
+		  }
+	  },
+		"completion_time": {
+		"schema.Org" ;{
 		"@context": "https://schema.org/",
 		"@type": "CreativeWork",
 		"name": "completion_time",
@@ -462,19 +525,21 @@
 			"@type": "CreativeWork",
 			"@context": "https://schema.org/",
 			"relationship": "same-as"
-		      },		
+		  }
+	  },	
+		"documentation": {
 		"name": "completion_time",
-		"type": "text",
+		"type": "General text",
 		"multivalue": "false",
 		"required": "false",
 		"title": "Intended Time to Complete",
 		"definition": "Approximate or typical time it takes to work with or through the  resource for the typical, intended target audience.",
 		"scopeNotes": "If specific duration of resource is not available from the resource itself, e.g., the timing on a video, or from the resource landing page, an estimated time should be entered.",
 		"controlledVocabulary": {
-			"source": "DMTC-generated",
+			"source": "",
 			"terms": [
 				{
-					"term": ["Up to 1 hour", "More than 1 hour, but less than 1 day", "More than 1 day, but less than 1 week", "More than 1 week", "Unknown"],
+					"term": [],
 					"mapsTo": {
 						"term": "",
 					"source": "",
@@ -483,6 +548,15 @@
 				}
 			]
 		},
+	"rendering": {
+		"html": {
+		  "form": "select",
+		  "attribute": "",
+		  "input_type": "datalist"
+		  }
+	  },
+	"contact_email": {
+		"schema.Org": {
 		"@context": "http://www.w3.org/2006/vcard/ns#hasEmail",
 		"@type": "Class",
 		"name": "hasEmail",
@@ -491,14 +565,16 @@
 			"@type": "",
 			"@context": "",
 			"relationship": ""
-		      },		
+		  }
+	      },
+	"documentation": {
 		"name": "contact.email",
-		"type": "text",
+		"type": "General text",
 		"multivalue": "false",
 		"required": "false",
 		"title": "Contact Email Address",
 		"definition": "Email address of person or organization that has been asserted as the contact for the resource.",
-		"scopeNotes": "", 
+		"scopeNotes": "The email address should be valid to enable the use of a 'mailto:' service.", 
 			"source": "",
 			"terms": [
 				{
@@ -511,6 +587,15 @@
 				}
 			]
 		},
+		"rendering": {
+			"html": {
+				"form": "input",
+				"atttribute": {},
+				"input_type": "email"
+			}
+		}, 
+		"contact.name": {
+		"schema.Org": {
 		"@context": "http://purl.org/dc/terms/",
 		"@type": "Class",
 		"name": "Agent",
@@ -519,14 +604,16 @@
 			"@type": "",
 			"@context": "",
 			"relationship": ""
-		      },		
+		  }
+		 },
+		"documentation": {
 		"name": "contact.name",
-		"type": "text",
-		"multivalue": "false",
+		"type": "General text",
+		"multivalue": "true",
 		"required": "false",
-		"title": "Contact Person(s)",
+		"title": "Contact Person,
 		"definition": "Name of person(s) who has/have been asserted as the contact(s) for the resource in case of questions or follow-up by resource user.",
-		"scopeNotes": "", {
+		"scopeNotes": "The person named as a contact may or may not be affiliated with an organization. If there is an affiliated organization, the name of that organization can be entered in the Contact Organization field.", 
 			"source": "",
 			"terms": [
 				{
@@ -539,16 +626,144 @@
 				}
 			]
 		},
+		"rendering": {
+	          "html": {
+			"form": "input",
+			"atttribute": {},
+			"input_type": "text"
+			}
+		},
+		"contributors_orgs.name": {
+			"schema.org": {
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
-		  "name": "name",
-			  "name": "contributors.type",
+		  "name": "contributor",
+		  "mapsToSchemaOrg": {
+			  "property": "contributor",
+			  "@type": "Thing/CreativeWork/Organization, Person",
+			  "@context": "https://schema.org/",
+			  "@relationship": "same-as"
+		  }
+			},
+			"documentation": {
+			  "name": "contributor_orgs.name",
 			  "type": "General Text",
 			  "multivalue": "true",
 			  "required": "false",
-			  "title": "Contributor Type",
+			  "title": "Contributor Orgnaization Name",
+			  "definition": "Name of organization that is a secondary contributor to the learningresource.  A contributor can also be an individual person."
+			 "scopeNotes": "The organization  does not necessarily represent an affiliation with a contributor person.  This field is used sparingly due to ongoing maintenance restrictions and only when obvious from authoritative descriptive info found on the website or the resource itself.",						 "controlledVocabulary": {
+				  "source": "",
+				  "terms": [
+				  {
+				    "term": "",
+				    "mapsTo": {
+					  "term": "",
+				  "source": "",
+				  "relationship": ""
+			  }
+			  }
+		  ]
+	},
+	"rendering": {
+		"html": {
+			"form": "input",
+			"attributes": "",
+			"input_type": "text"
+		}
+	},
+	 "contributor_org.name_identifier": { 
+ "schema.Org": {
+ "@context": "https://schema.org/",
+	"@type": "Thing",
+	"name": "contributor_org.name_identifier",
+	"mapsToSchemaOrg": {
+		"property":"value",
+		"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		      },
+  "documentation":  {
+    "name": "contributor_org.name_identifier",
+	"type": "Text",
+	"multivalue": "false",
+	"required": "false",
+	"title": "Contributor Organization Identifier",
+	"definition": "The unique identifier for the organization contributing to the resource.",
+	"scopeNotes": "Enter the identifier as text for the organization contributing to the resource. The ID should be a persistent identifier of a type that is included in the list of identifier types found in the Contributing Organization Identifier Scheme field.",
+	"controlledVocabulary": {
+		"source": "",
+		"terms": [
+			{
+				"term": "",
+				"mapsTo": {
+					"term": "",
+				"source": "",
+				"relationship": ""
+			}
+			}
+		]
+	},
+	"rendering": {
+          "html": {
+            "form": "input",
+            "attribute":  "",
+            "input_type": "text"
+          }
+        }
+       },
+	 "contributor_org.name_identifier_type": {
+	 "schema.org": {},
+	 "documentation": {
+	   "name": "contributor_org.name_identifier_type",
+	   "type": "text",
+	   "multivalue": "false",
+	   "required": "false",
+	   "title": "Contributor Organization Identifier Scheme",
+	   "definition": "The identifier scheme associated with the unique identifier for the organization contributing to the resource.",
+	    "scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+	    "controlledVocabulary": {
+		"source": "",
+		"terms": [
+			{
+				"term": "", 
+				"mapsTo": {
+					"term": "",
+				"source": "",
+				"relationship": ""
+			}
+			}
+		]
+	},
+	  "rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  },
+		"contributor_orgs.type": {
+			"schema.Org": {
+				
+			
 			  "definition": "Type of contribution to the resource made by a person or organization.",
 			  "scopeNotes": "The values for this term should be taken from controlled value list;  more than one type can be chosen.", 
+			  "controlledVocabulary": {
+				  "source": "",
+				  "terms": [
+				  {
+				    "term": "",
+				    "mapsTo": {
+					  "term": "",
+				  "source": "",
+				  "relationship": ""
+			  }
+			  }
+		  ]
+	},
+	"contributor_org.type":, {
+				"schema.Org": {
+				"@context": 
 			 "controlledVocabulary": {
 				 			"source":"LRMI Terms",
 			"terms":[
