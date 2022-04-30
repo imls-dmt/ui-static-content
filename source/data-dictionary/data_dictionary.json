@@ -516,7 +516,7 @@
 		  }
 	  },
 		"completion_time": {
-		"schema.Org" ;{
+		"schema.Org": {
 		"@context": "https://schema.org/",
 		"@type": "CreativeWork",
 		"name": "completion_time",
@@ -611,7 +611,7 @@
 		"type": "General text",
 		"multivalue": "true",
 		"required": "false",
-		"title": "Contact Person,
+		"title": "Contact Person",
 		"definition": "Name of person(s) who has/have been asserted as the contact(s) for the resource in case of questions or follow-up by resource user.",
 		"scopeNotes": "The person named as a contact may or may not be affiliated with an organization. If there is an affiliated organization, the name of that organization can be entered in the Contact Organization field.", 
 			"source": "",
@@ -651,7 +651,7 @@
 			  "multivalue": "true",
 			  "required": "false",
 			  "title": "Contributor Orgnaization Name",
-			  "definition": "Name of organization that is a secondary contributor to the learningresource.  A contributor can also be an individual person."
+			  "definition": "Name of organization that is a secondary contributor to the learningresource.  A contributor can also be an individual person.",
 			 "scopeNotes": "The organization  does not necessarily represent an affiliation with a contributor person.  This field is used sparingly due to ongoing maintenance restrictions and only when obvious from authoritative descriptive info found on the website or the resource itself.",						 "controlledVocabulary": {
 				  "source": "",
 				  "terms": [
