@@ -459,7 +459,7 @@
 			"source": "",
 			"terms": [
 				{
-					"term": "ORCID", 
+					"term": "", 
 					"mapsTo": {
 						"term": "",
 					"source": "",
@@ -633,6 +633,45 @@
 			"input_type": "text"
 			}
 		},
+		"contact.org": {
+		"schema.Org": {
+		"@context": "http://purl.org/dc/terms/",
+		"@type": "Class",
+		"name": "Agent",
+		  "mapsToSchemaOrg": {
+			"property":"",
+			"@type": "",
+			"@context": "",
+			"relationship": ""
+		  }
+		 },
+		"documentation": {
+		"name": "contact.org",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Contact Organization",
+		"definition": "Name of organization that has/have been asserted as the contact(s) for the resource in case of questions or follow-up by resource user.",
+		"scopeNotes": "The organization named may or may not be affiliated with a person named as a contact.  If there is an affiliated person, the name of that person can be entered in the Contact Person field.", 
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+		"rendering": {
+	          "html": {
+			"form": "input",
+			"atttribute": {},
+			"input_type": "text"
+			}
+		},			
 		"contributors_orgs.name": {
 			"schema.org": {
 		  "@context": "https://schema.org/",
@@ -672,7 +711,7 @@
 			"input_type": "text"
 		}
 	},
-	 "contributor_org.name_identifier": { 
+ "contributor_org.name_identifier": { 
  "schema.Org": {
  "@context": "https://schema.org/",
 	"@type": "Thing",
@@ -742,42 +781,225 @@
 			  "input_type": "checkbox"
 		  }
 	  },
-		"contributor_orgs.type": {
-			"schema.Org": {
-				
-			
-			  "definition": "Type of contribution to the resource made by a person or organization.",
-			  "scopeNotes": "The values for this term should be taken from controlled value list;  more than one type can be chosen.", 
-			  "controlledVocabulary": {
-				  "source": "",
-				  "terms": [
+	"contributor_orgs.type": {
+		"schema.Org": {},
+		"documentation": {
+		 "name": "contributor_orgs.type",
+		 "type": "General text",
+		 "multivalue": "true",
+		 "required": "false",
+		 "title": "Contribution Type",
+		 "definition": "Type of contribution to the resource made by an organization.",
+		 "scopeNotes": "The values for this term should be taken from controlled value list;  more than one type can be chosen.", 
+		 "controlledVocabulary": {
+			  "source": "",
+			  "terms": [
 				  {
 				    "term": "",
-				    "mapsTo": {
-					  "term": "",
+			  "mapsTo": {
+				  "term": "",
 				  "source": "",
 				  "relationship": ""
 			  }
 			  }
 		  ]
 	},
-	"contributor_org.type":, {
-				"schema.Org": {
-				"@context": 
-			 "controlledVocabulary": {
-				 			"source":"LRMI Terms",
-			"terms":[
+	"rendering": {
+		"html": {
+		  "form": "select",
+		  "attribute": "datalist", 
+		  "input_type": "checkbox"
+		}
+	},
+		"contributors.familyName": {
+		  "schema.Org": {
+			"@context": "https://schema.org/",
+		  "@type": "Thing/Person",
+		  "name": "contributors.familyName",
+		  "mapsToSchemaOrg": {
+			  "property":"familyName",
+			  "@type": "Thing/Person",
+			  "@context": "https://schema.org/",
+			  "relationship": "same-as"
+		  }
+		  },
+		  "documentation": {
+		     "name": "contributors.familyName",
+		     "type": "General text",
+		     "multivalue": "true",
+		     "required": "false",
+		    "title": "Contributing Person Family/Last Name",
+		    "definition": "Last or family name of person(s) contributing to the resource.",
+		"scopeNotes": "If the family or last name of the contributing person is more than one word, the names should be entered in reading order, e.g., El Saffar.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
 				{
-					"term":"",
-					"mapsTo": {
-						"term": ["Collaborator","Conceptualization","Data curation and stewardship","Endorser","Final product","Formal analysis","Funding and sponsorship","Illustration","investigation and raw data production","Methodology","Organizer","Other","Product administration and management","Resources","Software","Validation","Visualization","Voiceover video performer","Writing - original draft","Writing - review & editing"],  
-						"source": "LRMI Terms",
-						"relationship": ""
-					}
+				"term": "", 
+				"mapsTo": {
+					"term": "",
+					"source": "",
+					"relationship": ""
 				}
-				
-			]  
-		  },			  
+				}
+			]
+		},
+	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },	
+			  		"contributors.givenName": { 
+	  "schema.Org": {
+	  "@context": "https://schema.org/",
+	  "@type": "Thing/Person",
+	  "name": "contributors.givenName",
+	  "mapsToSchemaOrg": {
+			"property":"givenName",
+			"@type": "Thing/Person",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		      }
+	  },
+	   "documentation": {
+		"name": "contributors.givenName",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Contributing Person Given/First Name",
+		"definition": "Given or first name of person(s) contributing to the resource.",
+		"scopeNotes": "If the given or first name of the contributing person is more than one word or contains an initial, the names should be entered in reading order, e.g., Ruth S..",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		   	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
+		   	"contributors.name_identifier": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing",
+	"name": "contributors.name_identifier",
+	"mapsToSchemaOrg": {
+		"property":"value",
+		"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},
+	"documentation": {
+		"name": "contributors.name_identifier",
+		"type": "General Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Contributing Person Identifier",
+		"definition": "The unique identifier for the person(s) contributing to the resource.",
+		"scopeNotes": "Enter the identifier as text for the person(s) contributing to the resource. The ID should be a persistent identifier of a type that is included in the list of identifier types found in the Contributing Person Identifier Scheme field.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
+		"@context": "https://schema.org/",
+		"@type": "Thing",
+		"name": "contributors.name_identifier_type",
+		  "mapsToSchemaOrg": {
+			"property":"valueReference",
+			"@type": "Thing/Intangible/StructuredValue/PropertyValue",
+			"@context": "https://schema.org/",
+			"relationship": "same-as"
+		  }
+		},
+		"documentation": {
+		"name": "contributors.name_identifier_type",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Contributing Person Identifier Scheme",
+		"definition": "The identifier scheme associated with the unique identifier for the person(s) contributing to the resource, e.g., ORCID.",
+		"scopeNotes": "The value for this identifier should come from a controlled vocabulary set and entered as text.  See https://schema.org/docs/datamodel.html#identifierBg for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  }, 
+	"contributors.type": {
+		"schema.Org": {},
+		"documentation": {
+		 "name": "contributor.type",
+		 "type": "General text",
+		 "multivalue": "true",
+		 "required": "false",
+		 "title": "Contribution Type",
+		 "definition": "Type of contribution to the resource made by a person.",
+		 "scopeNotes": "The values for this term should be taken from controlled value list;  more than one type can be chosen.", 
+		 "controlledVocabulary": {
+			  "source": "",
+			  "terms": [
+				  {
+				    "term": "",
+			  "mapsTo": {
+				  "term": "",
+				  "source": "",
+				  "relationship": ""
+			  }
+			  }
+		  ]
+	},
+	"rendering": {
+		"html": {
+		  "form": "select",
+		  "attribute": "datalist", 
+		  "input_type": "checkbox"
+		}
+	},		
+		
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
 		  "name": "name",
