@@ -998,7 +998,158 @@
 		  "attribute": "datalist", 
 		  "input_type": "checkbox"
 		}
-	},		
+	},
+	  "credential_status": {
+	  	"schema.org": {},
+	  	"documentation": {
+	  	"name": "credential_status",
+		"type": "General Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Credential Offered",
+		"definition": "Declaration of whether a credential is offered for comopletion of the resource.",
+		"scopeNotes": "Responses include Yes, No, or Unknown.  Examples of a credential could include formal academic credentials or digital badges. Digital badges may also be known as microcredentials and are usually used to represent a way of acknowledging achievements or skill acquisition at a more granular level than a college degree. Those meeting the established criteria have an opportunity to earn and display digital badges in recognition of their engagement with the association offering the badge.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "datalist",
+			  "input_type": "radio"
+		  }
+	  },  
+	"ed_frameworks.name": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing/Intangible/AlignmentObject",
+	"name": "ed_frameworks.name",
+	"mapsToSchemaOrg": {
+		"property":"educationalFramework",
+		"@type": "Thing/Intangible/AlignmentObject",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "ed_frameworks.name",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Educational Framework Name",
+		"definition": "The name of the educational framework to which the resource is aligned, if any.  An educational framework is a structured description of educational concepts such as a shared curriculum, syllabus or set of learning objectives, or a vocabulary for describing some other aspect of education such as educational levels or reading ability.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. If the name of the educational framework is not included in the controlled vocabulary set, the name should be referred to the Editor for consideration as an addition to the controlled vocabulary set.  A resource can be aligned with more than one educational framework.  NOTE: the educational framework should be used along with the Educational Frameworks Node Name and Educational Frameworks Node Description. See https://blogs.pjjk.net/phil/explaining-the-lrmi-alignment-object/ for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+			"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  }, 
+	  "ed_frameworks.nodes.description": {
+	    "schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing/Intangible/AlignmentObject",
+	"name": "ed_frameworks.nodes.description",
+	"mapsToSchemaOrg": {
+		"property":"targetDescription",
+		"@type": "Thing/Intangible/AlignmentObject",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	  
+	"documentation": {
+	"name": "ed_frameworks.nodes.description",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Educational Frameworks Node Description",
+		"definition": "A description of one or more subcategories of an educational framework to which a resource is associated.",
+		"scopeNotes": "The Educational Frameworks Node Description should be used in conjunction with the Educational Frameworks Name and the Educational Frameworks Node Name. Each node should have only one description and may include a URL to the node description in addition to the textual description.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+	"rendering":{
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "textarea"
+		  }
+	  }, 
+	  	"ed_frameworks.name": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing/Intangible/AlignmentObject",
+	"name": "ed_frameworks.name",
+	"mapsToSchemaOrg": {
+		"property":"educationalFramework",
+		"@type": "Thing/Intangible/AlignmentObject",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "ed_frameworks.node.name",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Educational Frameworks Node Name",
+		"definition": "The name of a subcategory of an educational framework to which a resource is associated.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A resource can be aligned with more than one node.  NOTE: the Educational Frameworks Node Name should be used along with the Educational Frameworks Name and the Educational Frameworks Node Description.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  }, 
+	"title": {
 		
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
