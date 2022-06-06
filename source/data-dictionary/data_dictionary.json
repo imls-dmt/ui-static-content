@@ -1149,6 +1149,152 @@
 			  "input_type": "checkbox"
 		  }
 	  }, 
+				"keywords": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "keywords",
+	"mapsToSchemaOrg": {
+		"property":"keywords",
+		"@type": "text",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "keywords",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "true",
+		"title": "Keyword(s)",
+		"definition": "Important phrases or words used to describe the resource.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set for keywords. If a keyword is not presently in the controlled vocabulary list, one can be added for consideration by the Editor.  Keywords are are used to provide more specific information about the resource, but should still be generic enough to be used for other resources as well.  Note that Subject Discipline is used to describe the subject domain to which the resource refers or from which the resource might provide examples.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "datalist",
+			  "input_type": "text"
+		  }
+	  }, 
+	"title": {
+		
+		  "@context": "https://schema.org/",
+		  "@type": "CreativeWork",
+		  "name": "name",
+			  "name": "title",
+			  "type": "General Text",
+			  "multivalue": "false",
+			  "required": "true",
+			  "title": "Title",
+			  "definition": "The title of the resource",
+			  "scopeNotes": "The title should be taken from the resource itself.  Each word in the title should be capitalized except for connectors are verbs.  If there is a subtitle, only the first word of the subtitle should be capitalized.", 
+			 "controlledVocabulary": {
+				 			"source":"",
+			"terms":[
+				{
+					"term":"",
+					"mapsTo": {
+						"term": "",
+						"source": "",
+						"relationship": ""
+					}
+				}
+				
+			]  
+		  },
+	"language_primary": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "language_primary",
+	"mapsToSchemaOrg": {
+		"property":"inLanguage",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "language_primary",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Primary Language",
+		"definition": "Original language in which the learning resource being described is published or made available.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A resource can be aligned with only one primary language.  If resource is available in other languages as translations, use Additional Language(s) field.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "radio"
+		  }
+	  }, 
+	  	"languages_secondary": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing",
+	"name": "languages_secondary",
+	"mapsToSchemaOrg": {
+		"property":"translatedInto",
+		"@type": "Language",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "languages_secondary",
+		"type": "General text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Additional Language(s)",
+		"definition": "Additional languages in which the resource is tranlated or made available, if any.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A resource can be aligned with more than one additionly language.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "radio"
+		  }
+	  },
 	"title": {
 		
 		  "@context": "https://schema.org/",
