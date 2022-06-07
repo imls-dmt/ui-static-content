@@ -1189,32 +1189,6 @@
 			  "input_type": "text"
 		  }
 	  }, 
-	"title": {
-		
-		  "@context": "https://schema.org/",
-		  "@type": "CreativeWork",
-		  "name": "name",
-			  "name": "title",
-			  "type": "General Text",
-			  "multivalue": "false",
-			  "required": "true",
-			  "title": "Title",
-			  "definition": "The title of the resource",
-			  "scopeNotes": "The title should be taken from the resource itself.  Each word in the title should be capitalized except for connectors are verbs.  If there is a subtitle, only the first word of the subtitle should be capitalized.", 
-			 "controlledVocabulary": {
-				 			"source":"",
-			"terms":[
-				{
-					"term":"",
-					"mapsTo": {
-						"term": "",
-						"source": "",
-						"relationship": ""
-					}
-				}
-				
-			]  
-		  },
 	"language_primary": {
 	"schema.org": {
 	"@context": "https://schema.org/",
@@ -1295,6 +1269,88 @@
 			  "input_type": "radio"
 		  }
 	  },
+				"id": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing",
+	"name": "id",
+	"mapsToSchemaOrg": {
+		"property":"identifier",
+		"@type": "Thing",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "id",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "System MD Record ID",
+		"definition": "System id for the MD record; The format for the identifier is UUID, and is auto-generated at the time of ingest.",
+		"scopeNotes": "This needs to be a persistent identifier.This ID is part of the unique identifier for the metadata record for this resource.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
+	"license": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "license",
+	"mapsToSchemaOrg": {
+		"property":"license",
+		"@type": "Thing",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "license",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "License",
+		"definition": "A license for use of that applies to the resource, typically indicated by URL.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A resource should have only one license. If a license is not presently in the controlled vocabulary list, one can be added for consideration by the Editor.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "text"
+		  }
+	  }, 
+		},
+	
 	"title": {
 		
 		  "@context": "https://schema.org/",
