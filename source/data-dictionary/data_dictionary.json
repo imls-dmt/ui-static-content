@@ -1512,7 +1512,7 @@
 			  "input_type": "checkbox"
 		  }
 	  }, 
-				"lr_outcomes": {
+	"lr_outcomes": {
 	"schema.org": {
 	"@context": "https://schema.org/",
 	"@type": "Creative Work/LearningResource",
@@ -1673,7 +1673,126 @@
 			  "input_type": "text"
 		  }
 	  },
-
+"notes": {
+	"schema.org": {
+	"@context": "",
+	"@type": "",
+	"name": "",
+	"mapsToSchemaOrg": {
+		"property":"",
+		"@type": "",
+		"@context": "",
+		"relationship": ""
+		}
+	},	
+		"documentation": {
+		"name": "notes",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "MD Record Input Notes",
+		"definition": "Notes re: submission, review workflow or any issues needing to be brought to the attention of the Editor.",
+		"scopeNotes": "",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "textarea"
+		  }
+	  },
+ "pub_status": {
+	"schema.org": {
+	"@context": "",
+	"@type": "",
+	"name": "",
+	"mapsToSchemaOrg": {
+		"property":"",
+		"@type": "",
+		"@context": "",
+		"relationship": ""
+		}
+	},	
+		"documentation": {
+		"name": "pub_status",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "MD Record Publication Status",
+		"definition": "Status of metadata record within the system, i.e., either in-process or published.",
+		"scopeNotes": "System generated value of in-process upon initial submission of the record or when in review by either a reviewer or editor.  Editor approval is required for publishing the record.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": "textarea"
+		  }
+	  },
+	"published": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work",
+	"name": "published",
+	"mapsToSchemaOrg": {
+		"property":"datePublished",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "published",
+		"type": "Datetime",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Published/Broadcast Date",
+		"definition": "Date of first broadcast / publication.",
+		"scopeNotes": "Format for date should be MM/DD/YYYY. If the day of the month is not known, use 01 for the first day of the publication month.  If the month of the year is not known, use 01 for the first month of the year.  If the resource is re-published with changes noted on the resource landing page, website or the resource itself upon access, use Modification Date instead, and if available, note the version designation.  Version number does not need to be added for the first publication date of the resource.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "datetime"
+		  }
+	  },
 	"title": {
 		
 		  "@context": "https://schema.org/",
