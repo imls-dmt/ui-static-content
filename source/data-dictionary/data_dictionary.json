@@ -103,7 +103,7 @@
         "required": false,
         "title": "Accessibility Features",
         "definition": "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility.",
-        "scopeNotes": "CV values come from subset of W3C's accessibility features list, as needed at http://www.w3.org/wiki/WebSchemas/Accessibility for summary terms.  More complete terms can be added if desired in later phases.",
+        "scopeNotes": "CV values come from subset of W3C's accessibility features list, as needed at http://www.w3.org/wiki/WebSchemas/Accessibility for summary terms.  More terms can be added by consultation with the Editor.", 	
         "controlledVocabulary": {
           "source": "",
           "terms": [
@@ -1350,7 +1350,207 @@
 		  }
 	  }, 
 		},
-	
+		"locator_data": {
+	"schema.org": {
+	"@context": "https://purl.org/",
+	"@type": "dc/terms",
+	"name": "identifier",
+	"mapsToSchemaOrg": {
+		"property":"",
+		"@type": "",
+		"@context": "",
+		"relationship": ""
+		}
+	},	
+		"documentation": {
+		"name": "locator_data",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Resource Location Identifier",
+		"definition": "The identifier for the learning resource or landing page for the resource that contains important contextual information including the direct resolvable link to the resource, if applicable.",
+		"scopeNotes": "The identifier could be used to construct a URL to the resource or landing page, if desired, but is not entered as a URL.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  }, 
+"locator_type": {
+	"schema.org": {
+	"@context": "https://purl.org/",
+	"@type": "dc/terms",
+	"name": "identifier",
+	"mapsToSchemaOrg": {
+		"property":"",
+		"@type": "",
+		"@context": "",
+		"relationship": ""
+		}
+	},	
+		"documentation": {
+		"name": "locator_type",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Resource Location Identifier Type",
+		"definition": "Designation of location identifier type, e.g., DOI, ARK, Handle.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A resource location identifier should have only one identifier type. If an identifier type is not presently in the controlled vocabulary list, one can be added for consideration by consulting the Editor.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  }, 
+	 "lr_type": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work",
+	"name": "lr_type",
+	"mapsToSchemaOrg": {
+		"property":"learningResourceType",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "lr_type",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Learning Resource Type",
+		"definition": "A characteristic that describes the predominant type or kind of learning resource.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A learning resource should have only one type. If a learning resource type type is not presently in the controlled vocabulary list, one can be added for consideration by consulting the Editor.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "multiple"
+		  }
+	  },  
+ "md_record_id": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work",
+	"name": "md_record_id",
+	"mapsToSchemaOrg": {
+		"property":"identifier",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "md_record_id",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Md Record PID",
+		"definition": "Globally unique, persistent ID for the metadata record within the system for the resource being described.",
+		"scopeNotes": "The value for this field is generated from the UUID created by the system at the time of submission and is represented as a URI.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": "url"
+		  }
+	  },
+  "media_type": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work/MediaObject",
+	"name": "media_type",
+	"mapsToSchemaOrg": {
+		"property":"encodingFormat",
+		"@type": "CreativeWork/MediaObject",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "media_type",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Media Type",
+		"definition": "Media type of resource.",
+		"scopeNotes": "The values for this field should be chosen from the controlled vocabulary set. A learning resource should have only one media type. If a media type is not presently in the controlled vocabulary list, one can be added for consideration by consulting the Editor.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "text"
+		  }
+	  },
+
 	"title": {
 		
 		  "@context": "https://schema.org/",
