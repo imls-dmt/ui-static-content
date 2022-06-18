@@ -1356,38 +1356,38 @@
 	"@type": "dc/terms",
 	"name": "identifier",
 	"mapsToSchemaOrg": {
-		"property":"",
-		"@type": "",
-		"@context": "",
-		"relationship": ""
-		}
+	"property":"",
+	"@type": "",
+	"@context": "",
+	"relationship": ""
+	}
 	},	
-		"documentation": {
-		"name": "locator_data",
-		"type": "General text",
-		"multivalue": "false",
-		"required": "true",
-		"title": "Resource Location Identifier",
-		"definition": "The identifier for the learning resource or landing page for the resource that contains important contextual information including the direct resolvable link to the resource, if applicable.",
-		"scopeNotes": "The identifier could be used to construct a URL to the resource or landing page, if desired, but is not entered as a URL.",
-		"controlledVocabulary": {
-			"source": "",
-			"terms": [
-				{
-					"term": "", 
-					"mapsTo": {
-						"term": "",
-					"source": "",
-					"relationship": ""
+	"documentation": {
+	"name": "locator_data",
+	"type": "General text",
+	"multivalue": "false",
+	"required": "true",
+	"title": "Resource Location Identifier",
+	"definition": "The identifier for the learning resource or landing page for the resource that contains important contextual information including the direct resolvable link to the resource, if applicable.",
+	"scopeNotes": "The identifier could be used to construct a URL to the resource or landing page, if desired, but is not entered as a URL.",
+	"controlledVocabulary": {
+		"source": "",
+		"terms": [
+			{
+				"term": "", 
+				"mapsTo": {
+				"term": "",
+				"source": "",
+				"relationship": ""
 				}
 			}
 		]
 	},
-		"rendering": {
-		  "html": {
-			  "form": "input",
-			  "attribute": "",
-			  "input_type": "text"
+	"rendering": {
+	  "html": {
+		  "form": "input",
+		  "attribute": "",
+		  "input_type": "text"
 		  }
 	  }, 
 "locator_type": {
@@ -1430,6 +1430,47 @@
 			  "input_type": "checkbox"
 		  }
 	  }, 
+				"lr_outcomes": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work/LearningResource",
+	"name": "lr_outcomes",
+	"mapsToSchemaOrg": {
+		"property":"teaches",
+		"@type": "CreativeWork/LearningResource",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "lr_outcomes",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Learning Resource Outcomes",
+		"definition": "Descriptions of what knowledge, skills or abilities students should learn from the resource.",
+		"scopeNotes": "Descriptions of learning outcomes would, ideally, come from the resource landing page, website or the resource itself.  If that information is not available, use terms from Bloom's taxonomy as verbs in the descriptions of what is intended to be taught by the learning resource.  The categories of terms include Knowledge, Comprehension, Application, Analysis, Synthesis, and Evaluation.  From https://www.valamis.com/hub/learning-outcomes, The most useful learning outcomes include a verb that describes an observable action, a description of what the learner will be able to do and under which conditions they will be able to do it, and the performance level they should be able to reach. Also see the Help menu for more information.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "textarea"
+		  }
+	  },
 	 "lr_type": {
 	"schema.org": {
 	"@context": "https://schema.org/",
