@@ -1793,6 +1793,87 @@
 			  "input_type": "datetime"
 		  }
 	  },
+	"publisher": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work",
+	"name": "publisher",
+	"mapsToSchemaOrg": {
+		"property":"publisher",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/Organization",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "publisher",
+		"type": "General Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Publisher",
+		"definition": "The organization credited with publishing or broadcasting the resource.",
+		"scopeNotes": "The organization included as publisher should not represent the repository where the resource is stored unless the repository also publishes the resource and provides a persistent identifier for the resource such as a DOI.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "text"
+		  }
+	  },
+	"purpose": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work",
+	"name": "purpose",
+	"mapsToSchemaOrg": {
+		"property":"educationalUse",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/LearningResourceType",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "purpose",
+		"type": "General Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Educational Purpose",
+		"definition": "The purpose of the resource in the context of education; e.g., instruction, professional education, assessment.",
+		"scopeNotes": "The values for this field should come from the controlled vocabulary set.  There should be only one purpose declared fro each resource.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "datalist",
+			  "input_type": "checkbox"
+		  }
+	  },  
+
 	"title": {
 		
 		  "@context": "https://schema.org/",
