@@ -43,6 +43,47 @@
       }
     }
   },
+"access_conditions": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work",
+	"name": "access_conditions",
+	"mapsToSchemaOrg": {
+		"property":"conditionsOfAccess",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "access_conditions",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Access Conditions",
+		"definition": "Conditions upon which the resource can be accessed beyond cost, e.g., login required.",
+		"scopeNotes": "The descriptions for this field should not duplicate what is available from other fields including Access Cost or License. Ideally, any access conditions will be evident from the resource landing page, website or upon trying to access the resource itself.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "textarea"
+		  }
+	  },
+
      "access_cost": {
       "schemaOrg": {
         "@context": "",
