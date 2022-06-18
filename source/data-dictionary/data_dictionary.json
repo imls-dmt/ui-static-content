@@ -1148,8 +1148,49 @@
 			  "attribute": "datalist",
 			  "input_type": "checkbox"
 		  }
-	  }, 
-				"keywords": {
+		},
+	 "expertise_level": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Creative Work/LearningResource",
+	"name": "expertise_level",
+	"mapsToSchemaOrg": {
+		"property":"educationalLevel",
+		"@type": "CreativeWork/LearningResource",
+		"@context": "https://schema.org",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "expertise_level",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "Expertise Level",
+		"definition": "The skill level targeted for the topic being taught.",
+		"scopeNotes": "The values for this field should come from the controlled value set. Ideally, the level will be indicated by the resource landing page, website or within the resource itself.  See the Help menu for more guidance and examples of how to determine the skill level for a resource.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+
+		"rendering": {
+		  "html": {
+			  "form": "select",
+			  "attribute": "datalist",
+			  "input_type": "text"
+		  }
+	  },
+	"keywords": {
 	"schema.org": {
 	"@context": "https://schema.org/",
 	"@type": "CreativeWork",
