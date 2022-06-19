@@ -1772,7 +1772,7 @@
 		"required": "false",
 		"title": "Published/Broadcast Date",
 		"definition": "Date of first broadcast / publication.",
-		"scopeNotes": "Format for date should be MM/DD/YYYY. If the day of the month is not known, use 01 for the first day of the publication month.  If the month of the year is not known, use 01 for the first month of the year.  If the resource is re-published with changes noted on the resource landing page, website or the resource itself upon access, use Modification Date instead, and if available, note the version designation.  Version number does not need to be added for the first publication date of the resource.",
+		"scopeNotes": "Format for date should be YYYY-MM-DD. Time will be applied by the system. If the day of the month is not known, use 01 for the first day of the publication month.  If the month of the year is not known, use 01 for the first month of the year.  If the resource is re-published with changes noted on the resource landing page, website or the resource itself upon access, use Modification Date instead, and if available, note the version designation.  Version number does not need to be added for the first publication date of the resource.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -1873,6 +1873,126 @@
 			  "input_type": "checkbox"
 		  }
 	  },  
+	"rating": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing/Intangible/Rating",
+	"name": "rating",
+	"mapsToSchemaOrg": {
+		"property":"ratingValue",
+		"@type": "Thing/Intangible/Rating/CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "rating",
+		"type": "Floating Point",
+		"multivalue": "false",
+		"required": "false",
+		"title": "User Rating for Resource",
+		"definition": "Input from a user assessing the user's reaction to the learning resource following Kirkpatrick's model of training evaluation.",
+		"scopeNotes": "The values for this field should come from its controlled vocabulary set.  The values reflect an assessment that a user has made in answer to selected questions about their reaction to the resource as a training or educational entity. The questions reflect a user's evaluation of Level 1 of Kirkpatarick's Model of learning evaluation.  There may be more than one rating associated with each resource. See https://educationaltechnology.net/kirkpatrick-model-four-levels-learning-evaluation/ for more information about the Kirkpatrick model.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "datalist",
+			  "input_type": "radio"
+		  }
+	  }, 
+	"ratings": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "Thing/Intangible/Rating",
+	"name": "ratings",
+	"mapsToSchemaOrg": {
+		"property":"ratingValue",
+		"@type": "Thing/Intangible/Rating/CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "ratings",
+		"type": "Floating Point",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Aggregated User Ratings for Resource",
+		"definition": "The aggregation of input from all user assessments evaluating  users' reaction to the learning resource following Kirkpatrick's model of training evaluation.",
+		"scopeNotes": "The values reflect the aggregation of all assessments that users have made in answer to selected questions about their reaction to the resource as a training or educational entity. The questions reflect users evaluations of Level 1 of Kirkpatarick's Model of learning evaluation.  There will be only than one aggregated rating associated with each resource.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "datalist",
+			  "input_type": "text"
+		  }
+	  }, 
+	"resource_modification_date": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "resource_modification_date",
+	"mapsToSchemaOrg": {
+		"property":"dateModified",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "resource_modification_date",
+		"type": "Datetime",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Last Modification Date",
+		"definition": "Date in which the resource has last been modified from the original published or broadcast version.",
+		"scopeNotes": "This value may be used in addition to or in lieu of version information found in that MD element.  As with other dates, format of dates should be YYYY-MM-DD. Time will be applied by the system.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "",
+			  "input_type": "Datetime"
+		  }
+	  }, 
 
 	"title": {
 		
