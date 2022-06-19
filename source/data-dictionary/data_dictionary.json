@@ -518,6 +518,8 @@
 			  "input_type": "text"
 		  }
 	  },
+		"authors.name_identifier_type" {
+		"schema.org": {
 		"@context": "https://schema.org/",
 		"@type": "Thing",
 		"name": "authors.name_identifier_type",
@@ -753,7 +755,7 @@
 			"input_type": "text"
 			}
 		},			
-		"contributors_orgs.name": {
+		"contributor_orgs.name": {
 			"schema.org": {
 		  "@context": "https://schema.org/",
 		  "@type": "CreativeWork",
@@ -770,7 +772,7 @@
 			  "type": "General Text",
 			  "multivalue": "true",
 			  "required": "false",
-			  "title": "Contributor Orgnaization Name",
+			  "title": "Contributor Organization Name",
 			  "definition": "Name of organization that is a secondary contributor to the learningresource.  A contributor can also be an individual person.",
 			 "scopeNotes": "The organization  does not necessarily represent an affiliation with a contributor person.  This field is used sparingly due to ongoing maintenance restrictions and only when obvious from authoritative descriptive info found on the website or the resource itself.",						 "controlledVocabulary": {
 				  "source": "",
@@ -792,11 +794,11 @@
 			"input_type": "text"
 		}
 	},
- "contributor_org.name_identifier": { 
+ "contributor_orgs.name_identifier": { 
  "schema.Org": {
  "@context": "https://schema.org/",
 	"@type": "Thing",
-	"name": "contributor_org.name_identifier",
+	"name": "contributor_orgs.name_identifier",
 	"mapsToSchemaOrg": {
 		"property":"value",
 		"@type": "Thing/Intangible/StructuredValue/PropertyValue",
@@ -804,7 +806,7 @@
 		"relationship": "same-as"
 		      },
   "documentation":  {
-    "name": "contributor_org.name_identifier",
+    "name": "contributor_orgs.name_identifier",
 	"type": "Text",
 	"multivalue": "false",
 	"required": "false",
@@ -832,10 +834,10 @@
           }
         }
        },
-	 "contributor_org.name_identifier_type": {
+	 "contributor_orgs.name_identifier_type": {
 	 "schema.org": {},
 	 "documentation": {
-	   "name": "contributor_org.name_identifier_type",
+	   "name": "contributor_orgs.name_identifier_type",
 	   "type": "text",
 	   "multivalue": "false",
 	   "required": "false",
@@ -932,7 +934,7 @@
 			  "input_type": "text"
 		  }
 	  },	
-			  		"contributors.givenName": { 
+	"contributors.givenName": { 
 	  "schema.Org": {
 	  "@context": "https://schema.org/",
 	  "@type": "Thing/Person",
@@ -972,7 +974,7 @@
 			  "input_type": "text"
 		  }
 	  },
-		   	"contributors.name_identifier": {
+   	"contributors.name_identifier": {
 	"schema.org": {
 	"@context": "https://schema.org/",
 	"@type": "Thing",
@@ -1012,8 +1014,10 @@
 			  "input_type": "text"
 		  }
 	  },
-		"@context": "https://schema.org/",
-		"@type": "Thing",
+		"contributors.name_identifier_type": {
+		"schema.org": {
+		"@context": "https://schema.Org",
+		"@type": "coverage",
 		"name": "contributors.name_identifier_type",
 		  "mapsToSchemaOrg": {
 			"property":"valueReference",
@@ -1080,6 +1084,46 @@
 		  "input_type": "checkbox"
 		}
 	},
+		 "country_of_origin": {
+	  	"schema.org": {
+		"@context": "http://purl.org/dc/terms/",
+		"@type": "coverage",
+		"name": "country_of_origin",
+			"mapsToSchemaOrg": {
+			"property":"",
+			"@type": "",
+			"@context": "",
+			"relationship": ""
+		}
+	},	
+	  	"documentation": {
+	  	"name": "country_of_origin",
+		"type": "General Text",
+		"multivalue": "true",
+		"required": "false",
+		"title": "Country of Origin",
+		"definition": "Code for country from which the resource was generated.",
+		"scopeNotes": "Values for this field will come from a controlled value set.  There should be only one country.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "",
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+				}
+			]
+		},
+	  "rendering": {
+		  "html": {
+			  "form": "input",
+			  "attribute": "datalist, multiple",
+			  "input_type": "checkbox"
+		  }
+	  }, 
 	  "credential_status": {
 	  	"schema.org": {},
 	  	"documentation": {
