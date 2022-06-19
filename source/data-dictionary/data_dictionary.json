@@ -1103,7 +1103,7 @@
 		"required": "false",
 		"title": "Country of Origin",
 		"definition": "Code for country from which the resource was generated.",
-		"scopeNotes": "Values for this field will come from a controlled value set.  There should be only one country.",
+		"scopeNotes": "Values for this field will come from a controlled value set.  The resource may come from more than one country.  Determination of the country or countries of origin should come from the landing page, website or resource itself or ideally from the content creators.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -1124,6 +1124,86 @@
 			  "input_type": "checkbox"
 		  }
 	  }, 
+	 "created": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "created",
+	"mapsToSchemaOrg": {
+		"property":"dateCreated",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "created",
+		"type": "Datetime",
+		"multivalue": "false",
+		"required": "true",
+		"title": "MD Record Create Date",
+		"definition": "The date on which the metadata record was created.",
+		"scopeNotes": "The value for this field is system-generated at the time the MD record is submitted to the system.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": ""
+		  }
+	  }, 
+  "creator": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "creator",
+	"mapsToSchemaOrg": {
+		"property":"creator",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "creator",
+		"type": "General text",
+		"multivalue": "false",
+		"required": "true",
+		"title": "MD Record Creator Name",
+		"definition": "The name of the person creating the MD record for a resource.",
+		"scopeNotes": "The value for this field is system-generated from the login name of the person submitting the resource to the system.  Anonymous submission is no longer allowed.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": ""
+		  }
+	  },  
 	  "credential_status": {
 	  	"schema.org": {},
 	  	"documentation": {
