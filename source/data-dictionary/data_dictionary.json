@@ -43,6 +43,46 @@
       }
     }
   },
+"abstract_format": {
+"schema.org": {
+"@context": "",
+"@type": "",
+"name": "",
+"mapsToSchemaOrg": {
+	"property":"",
+	"@type": "",
+	"@context": "",
+	"relationship": ""
+		}
+	},
+		"documentation": {
+		"name": "abstract_format",
+		"type": "General Text",
+		"multivalue": "false",
+		"required": "false",
+		"title": "Abstract Format",
+		"definition": "Declaration for how the abstract description will be represented.",
+		"scopeNotes": "This is a system-generated value that describes how the abstract description will be formated.  This is system field for declaring howthe abstract will be expressed.  The options available are for .plain text or formatted for a front end developer to use aas either filtered html (where MS tags are removed) or full html.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": ""
+		  }
+	  }, 
 "access_conditions": {
 	"schema.org": {
 	"@context": "https://schema.org/",
