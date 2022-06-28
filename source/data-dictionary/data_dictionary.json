@@ -1142,8 +1142,8 @@
 		"multivalue": "false",
 		"required": "true",
 		"title": "MD Record Create Date",
-		"definition": "The date on which the metadata record was created.",
-		"scopeNotes": "The value for this field is system-generated at the time the MD record is submitted to the system.",
+		"definition": "The date on which the metadata record was first saved as part of the input workflow.",
+		"scopeNotes": "The value for this field is system-generated at the time the MD record is saved to the system.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
