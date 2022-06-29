@@ -2214,8 +2214,8 @@
 		"multivalue": "false",
 		"required": "true",
 		"title": "System Publication Status",
-		"definition": "System generated publication status of the resource w/in the registry as a yes or no.",
-		"scopeNotes": "This value is a Boolean value of Yes for published and No for not published.",
+		"definition": "System generated publication status of the resource w/in the registry as a yes for published or no for not published.",
+		"scopeNotes": "System generated value that works with with pub_status to the extent that value is No until editor or administrator moves the resource to the published status when the value changes to Yes and is made visible to the public..",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
