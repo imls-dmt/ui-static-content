@@ -1934,8 +1934,8 @@
 		"multivalue": "false",
 		"required": "true",
 		"title": "MD Record Publication Status",
-		"definition": "Status of metadata record within the system, i.e., either in-process or published.",
-		"scopeNotes": "System generated value of in-process upon initial submission of the record or when in review by either a reviewer or editor.  Editor approval is required for publishing the record.",
+		"definition": "Status of metadata record within the system, i.e., in-process, in-review, pre-pub-review, deprecate-request, deprecated or published.",
+		"scopeNotes": "System generated with CV of: in-process when authenticated user saves brief record and moves to submitter;  in-review when submitter works on record and moves record to reviewer; pre-pub-review when reviewer moves record to editor to review for editing; deprecate-request when either submitter or reviewer determines a record should be unpublished or not considered for addition if the resource does not meet selection criteria;  deprecated when editor or administrator moves record is to be unpublished but not deleted from the system; and published when editor or administrator moves record is to be published and made available to the public.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
