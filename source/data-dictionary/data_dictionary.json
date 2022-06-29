@@ -2093,9 +2093,9 @@
 		"type": "Floating Point",
 		"multivalue": "false",
 		"required": "false",
-		"title": "User Rating for Resource",
-		"definition": "Input from a user assessing the user's reaction to the learning resource following Kirkpatrick's model of training evaluation.",
-		"scopeNotes": "The values for this field should come from its controlled vocabulary set.  The values reflect an assessment that a user has made in answer to selected questions about their reaction to the resource as a training or educational entity. The questions reflect a user's evaluation of Level 1 of Kirkpatarick's Model of learning evaluation.  There may be more than one rating associated with each resource. See https://educationaltechnology.net/kirkpatrick-model-four-levels-learning-evaluation/ for more information about the Kirkpatrick model.",
+		"title": "Aggregated User Ratings for Resource",
+		"definition": "The aggregation of input from all user assessments evaluating  users' reaction to the learning resource following Kirkpatrick's model of training evaluation.",
+		"scopeNotes": "The value is calculated as an average of all the user ratings for each of the questions in the default survey. The values reflect the responses for each question of the default survey that users have made in answer to record their reaction to the resource as a training or educational entity. The questions reflect a user's evaluation of Level 1 of Kirkpatarick's Model of learning evaluation.  There may be more than one user response to each question.  If there are no user responses to the question, this field will not appear on the resource record.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -2113,7 +2113,7 @@
 		  "html": {
 			  "form": "input",
 			  "attribute": "datalist",
-			  "input_type": "radio"
+			  "input_type": "floatingPoint"
 		  }
 	  }, 
 	"ratings": {
@@ -2133,9 +2133,9 @@
 		"type": "Floating Point",
 		"multivalue": "false",
 		"required": "false",
-		"title": "Aggregated User Ratings for Resource",
-		"definition": "The aggregation of input from all user assessments evaluating  users' reaction to the learning resource following Kirkpatrick's model of training evaluation.",
-		"scopeNotes": "The values reflect the aggregation of all assessments that users have made in answer to selected questions about their reaction to the resource as a training or educational entity. The questions reflect users evaluations of Level 1 of Kirkpatarick's Model of learning evaluation.  There will be only than one aggregated rating associated with each resource.",
+		"title": "User Ratings for Resource",
+		"definition": "Inputs from users assessing each user's reaction to the learning resource following Kirkpatrick's model of training evaluation.",
+		"scopeNotes": "The values represent the user ratings for each of the questions in the default survey.  he values for this field will usually reflect a 5 point Likert scale or may be yes/now questions.  The values reflect an assessment that a user has made in answer to selected questions about their reaction to the resource as a training or educational entity.  The questions reflect a user's evaluation of Level 1 of Kirkpatarick's Model of learning evaluation.  There may be more than one rating associated with each resource. See https://educationaltechnology.net/kirkpatrick-model-four-levels-learning-evaluation/ for more information about the Kirkpatrick model. If there are no user responses to the question, this field will not appear.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
@@ -2152,8 +2152,8 @@
 		"rendering": {
 		  "html": {
 			  "form": "output",
-			  "attribute": "datalist",
-			  "input_type": "text"
+			  "attribute": "",
+			  "input_type": "floatingPoint"
 		  }
 	  }, 
 	"resource_modification_date": {
