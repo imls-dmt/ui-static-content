@@ -1876,6 +1876,46 @@
 			  "input_type": "text"
 		  }
 	  },
+	"modification_date": {
+	"schema.org": {
+	"@context": "https://schema.org/",
+	"@type": "CreativeWork",
+	"name": "modification_date",
+	"mapsToSchemaOrg": {
+		"property":"dateModified",
+		"@type": "CreativeWork",
+		"@context": "https://schema.org/",
+		"relationship": "same-as"
+		}
+	},	
+		"documentation": {
+		"name": "modification_date",
+		"type": "Datetime",
+		"multivalue": "false",
+		"required": "true",
+		"title": "MD Record Modify Date",
+		"definition": "System generated date and time when MD record is modified.",
+		"scopeNotes": "Date and time will be applied by the system.",
+		"controlledVocabulary": {
+			"source": "",
+			"terms": [
+				{
+					"term": "", 
+					"mapsTo": {
+						"term": "",
+					"source": "",
+					"relationship": ""
+				}
+			}
+		]
+	},
+		"rendering": {
+		  "html": {
+			  "form": "output",
+			  "attribute": "",
+			  "input_type": "Datetime"
+		  }
+	  }, 
 "notes": {
 	"schema.org": {
 	"@context": "",
@@ -2175,7 +2215,7 @@
 		"required": "false",
 		"title": "Last Modification Date",
 		"definition": "Date in which the resource has last been modified from the original published or broadcast version.",
-		"scopeNotes": "This value may be used in addition to or in lieu of version information found in that MD element.  As with other dates, format of dates should be YYYY-MM-DD. Time will be applied by the system.",
+		"scopeNotes": "This value may be used in addition to or in lieu of version information found in that MD element.  As with other dates, format of dates should be YYYY-MM-DD, but may be displayed differently. Time will be applied by the system.",
 		"controlledVocabulary": {
 			"source": "",
 			"terms": [
