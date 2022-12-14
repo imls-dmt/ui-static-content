@@ -2,7 +2,7 @@
   "news": [
     {
       "author": "Nancy Hoebelheinrich",
-      <!--- "date": "2022-03-14T12:00:00Z" --->,
+      "date": "2022-03-14T12:00:00Z",
       "title": "RDA ETHRD IG releases a recommended minimal metadata set for learning resources",
       "thumbnail": "",
       "associated-resources": [],
