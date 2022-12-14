@@ -2,8 +2,8 @@
   "news": [
     {
       "author": "Nancy Hoebelheinrich",
-      "date": "2022-03-14T12:00:00Z",
-      "title": "RDA ETHRD IG releasing a draft minimal metadata set for learning resources",
+      <!--- "date": "2022-03-14T12:00:00Z" --->,
+      "title": "RDA ETHRD IG releases a recommended minimal metadata set for learning resources",
       "thumbnail": "",
       "associated-resources": [],
       "content": "source/blog/news_001.md"
@@ -19,9 +19,9 @@
   ],
   "features": [
     {
-      "author": "Me, myself, and I",
-      "date": "2021-05-13T14:52:16Z",
-      "title": "A great resource",
+      "author": "Nancy Hoebelheinrich",
+      "date": "2022-12-14T14:52:16Z",
+      "title": "Learning about data governance",
       "thumbnail": "/images/frameworks/cdi-ssf-components.jpg",
       "associated-resources": [],
       "content": "/source/blog/feature_001.md"
