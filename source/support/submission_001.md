@@ -1,6 +1,6 @@
-# Submission Workflow
+# Submission Flowchart
 
-## Roles related to submission and publishing processes
+## Roles and Privileges related to submission and publishing processes
 1. Authenticated User - a person who has created an account on the system and can submit minimal, required metadata for a resource to add to the system.
 2. Submitter - an authenticated user who has requested permissions to create and submit a metadata record for a resource into the system.
 3. Reviewer - an authenticated user with submission privileges who can also review others' records and submit them for publication, and suggest terms to add to controlled value sets.
