@@ -43,7 +43,7 @@
       "thumbnail": "",
       "associated-resources": [],
       "content": "/source/support/MDnuances_001.md"
-    },
+    }
     {
       "author": "Nancy Hoebelheinrich",
       "date": "2023-01-18T12:00:00Z",
@@ -52,14 +52,7 @@
       "associated-resources": [],
       "content": "/source/support/MDnuances_002.md"
     },
-    {
-      "author": "Nancy Hoebelheinrich",
-      "date": "2023-01-18T12:00:00Z",
-      "title": "Roles and Privileges Explained",
-      "thumbnail": "",
-      "associated-resources": [],
-      "content": "/source/support/MDnuances_003.md"
-    }
+
   "tipsandtricks": [
     {
       "author": "Nancy Hoebelheinrich",
